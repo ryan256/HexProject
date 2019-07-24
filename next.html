@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="shortcut icon" href="assets/img/hexIcons.png">
-    <title>Beranda</title>
+    <title>.....</title>
   </head>
   <body>
   
@@ -44,19 +44,58 @@
 	</div>
 	</div>
 
- <div class="d-flex justify-content-end">
-	<div class="p-2 bd-highlight"><button type="button" class="btn btn-danger btn-block mr-5" data-toggle="modal" data-target="#login">
-    Masuk
-	</button></div>
+	<div class="d-flex justify-content-end">
+	
+	<div class=" bd-highlight">
+	
+	<div class="nav-item dropdown mr-5">
 
-	<div class="p-2 bd-highlight"><button type="button" class="btn btn-warning btn-block mr-5" data-toggle="modal" data-target="#regis">
-    Daftar
-    </button></div>
+	 <a class="nav-link dropdown" id="notif" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <button type="button" class="btn" style="button-color: #e0dfdc;">
+		<img src="assets/img/notif.png" width="25">
+		</button>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="notif">
+          <a class="dropdown-item" href="#">Training</a>
+          <a class="dropdown-item" href="#">Mentoring</a>
+		  <a class="dropdown-item" href="#">Company</a>
+		  <a class="dropdown-item" href="#">Job Linking</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">About US</a>
+        </div>
+    </div>
+	
+	</div>
+
+	<div class=" bd-highlight">
+	
+	<div class="nav-item dropdown mr-5">
+
+	 <a class="nav-link dropdown" id="akun" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        
+		<button type="button" class="btn" style="button-color: #e0dfdc;">
+		<img src="assets/img/people.png" width="34">
+        </button>
+		</a>
+        <div class="dropdown-menu" aria-labelledby="akun">
+          <a class="dropdown-item" href="#">Training</a>
+          <a class="dropdown-item" href="#">Mentoring</a>
+		  <a class="dropdown-item" href="#">Company</a>
+		  <a class="dropdown-item" href="#">Job Linking</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">About US</a>
+        </div>
+    </div>
+	
+	</div>
 </div>
 </nav>
 
+
+
 <section id="Service" class="Service  pb-4">
 <div class="container">
+
 	<div class="row mb-4 pt-4 pb-4">
 		<div class="col">
 		<h2></h2>
@@ -67,6 +106,7 @@
 		<h2></h2>
 		</div>
 	</div>
+	
 	
 	<div class="row mb-4 pb-5 text-center">
 	
@@ -443,7 +483,7 @@
         </button>
       </div>
       <div class="modal-body text-center">
-      <form class="form-signin" action="next.html" method="post">
+      <form class="form-signin">
 		<img class="mb-4" src="assets/img/hexIcons.png" alt="" width="100">
 		
 		<label for="inputName" class="sr-only">Username</label>
