@@ -19,7 +19,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   
   
 <nav class="navbar fixed-top navbar-expand-lg navbar-light shadow-sm p-3 mb-5 rounded" style="background-color: #e0dfdc;">
-  <a class="navbar-brand mr-3" href="#"><img src="assets/img/hexIcons.png" width="100"></a>
+  <a class="navbar-brand mr-3" href="<?php echo base_url();?>#"><img src="<?php echo base_url();?>assets/img/hexIcons.png" width="100"></a>
 
    
    <ul class="navbar-nav mr-5">
@@ -29,12 +29,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           Service
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Training</a>
-          <a class="dropdown-item" href="#">Mentoring</a>
-		  <a class="dropdown-item" href="#">Company</a>
-		  <a class="dropdown-item" href="#">Job Linking</a>
+          <a class="dropdown-item" href="<?php echo base_url();?>#">Training</a>
+          <a class="dropdown-item" href="<?php echo base_url();?>#">Mentoring</a>
+		  <a class="dropdown-item" href="<?php echo base_url();?>#">Company</a>
+		  <a class="dropdown-item" href="<?php echo base_url();?>#">Job Linking</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">About US</a>
+          <a class="dropdown-item" href="<?php echo base_url();?>#">About US</a>
         </div>
       </li>
 

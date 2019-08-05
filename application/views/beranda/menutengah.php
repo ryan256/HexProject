@@ -67,7 +67,7 @@
 		<h3>Event</h3></div>
 
   <div class="ml-auto p-2 bd-highlight">
-		<a href="<?php echo base_url();?>index.php/awal/event" class="text-danger"><h3>Others...</h3></a></div>
+		<a href="<?php echo base_url();?>index.php/masuk/event" class="text-danger"><h3>Others...</h3></a></div>
    </div>
 	
 	<div class="row mb-4 text-center">

@@ -25,4 +25,41 @@ class awal extends CI_Controller {
 		$this->load->view('awal/fotbar');
 	}
 	
+	public function event()
+	{
+		$this->load->view('awal/navawal');
+		$this->load->view('awal/event');
+		$this->load->view('awal/fotbar');
+	}
+	
+	public function event1()
+	{
+		$this->load->view('awal/navawal');
+		$this->load->view('awal/listevent/event1');
+		$this->load->view('awal/fotbar');
+	}
+	
+	public function event2()
+	{
+		$this->load->view('awal/navawal');
+		$this->load->view('awal/listevent/event2');
+		$this->load->view('awal/fotbar');
+	}
+	
+	public function event3()
+	{
+		$this->load->view('awal/navawal');
+		$this->load->view('awal/listevent/event3');
+		$this->load->view('awal/fotbar');
+	}
+	
+	public function event4()
+	{
+		$this->load->view('awal/navawal');
+		$this->load->view('awal/listevent/event4');
+		$this->load->view('awal/fotbar');
+	}
+	
+	
+	
 }
