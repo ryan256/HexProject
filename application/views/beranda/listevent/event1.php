@@ -33,17 +33,17 @@
 		
 		<div class="row ml-2 pb-2">
 		<div class="col-sm-7">
-		<a href="<?php echo base_url();?>index.php/masuk/event3"><img src="<?php echo base_url();?>assets/img/rockimring.jpg" class="pb-3" width="130" alt="..."></div></a>
+		<a href="<?php echo base_url();?>masuk/event3"><img src="<?php echo base_url();?>assets/img/rockimring.jpg" class="pb-3" width="130" alt="..."></div></a>
 		<div class="col-sm-4">Warped</div>
 		</div>
 		<div class="row ml-2 pb-2">
 		<div class="col-sm-7">
-		<a href="<?php echo base_url();?>index.php/masuk/event4"><img src="<?php echo base_url();?>assets/img/hellfest.jpg" class="pb-3" width="130" alt="..."></div></a>
+		<a href="<?php echo base_url();?>masuk/event4"><img src="<?php echo base_url();?>assets/img/hellfest.jpg" class="pb-3" width="130" alt="..."></div></a>
 		<div class="col-sm-4">Sht</div>
 		</div>
 		<div class="row ml-2 pb-2">
 		<div class="col-sm-7">
-		<a href="<?php echo base_url();?>index.php/masuk/event2"><img src="<?php echo base_url();?>assets/img/dwp.jpg" class="pb-3" width="130" alt="..."></div></a>
+		<a href="<?php echo base_url();?>masuk/event2"><img src="<?php echo base_url();?>assets/img/dwp.jpg" class="pb-3" width="130" alt="..."></div></a>
 		<div class="col-sm-4">YoMM</div>
 		</div>
 		

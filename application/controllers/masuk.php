@@ -18,6 +18,13 @@ class masuk extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
+	 
+	public function __construct()
+	{
+		parent::__construct();
+		//$this->load->model('username_model');
+	}
+	 
 	public function berandamasuk()
 	{
 		$this->load->view('beranda/navberanda');
@@ -62,10 +69,45 @@ class masuk extends CI_Controller {
 	
 	public function akun()
 	{
+		
+		$data['reg'] = $this->username_model->getAllreg();
+		
 		$this->load->view('beranda/navberanda');
-		$this->load->view('beranda/akun');
+		$this->load->view('beranda/akun',$data);
 		$this->load->view('beranda/fotbar');
 	}
+	
+	public function tambah()
+	{
+		//$this->load->model('username_model');
+		
+		$this->form_validation->set_rules('username','Username','required');
+		$this->form_validation->set_rules('email','Email','required|valid_email');
+		$this->form_validation->set_rules('notelp','No.Telp','required|numeric');
+		
+		if ($this->form_validation->run() == FALSE)
+        {
+        $this->load->view('beranda/navberanda');
+		$this->load->view('beranda//akun/tambah');
+		$this->load->view('beranda/fotbar');
+        }
+				
+        else{
+			
+        $this->username_model->tambahData();
+		$this->session->set_flashdata('flash','Ditambahkan');
+		redirect('masuk/akun');
+        }
+					
+	}
+	
+	public function hapus($id)
+	{
+		$this->username_model->hapusdata($id);
+		$this->session->set_flashdata('flash', 'dihapus');
+		redirect('masuk/akun');
+	}
+	
 	
 	public function dataakun()
 	{

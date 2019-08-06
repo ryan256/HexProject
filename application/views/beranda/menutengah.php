@@ -67,28 +67,28 @@
 		<h3>Event</h3></div>
 
   <div class="ml-auto p-2 bd-highlight">
-		<a href="<?php echo base_url();?>index.php/masuk/event" class="text-danger"><h3>Others...</h3></a></div>
+		<a href="<?php echo base_url();?>masuk/event" class="text-danger"><h3>Others...</h3></a></div>
    </div>
 	
 	<div class="row mb-4 text-center">
 	
 		<div class="col-md ">
-			<a href="<?php echo base_url();?> "><img src="<?php echo base_url();?>assets/img/warpedtour.jpg" width="250" class="rounded mb-1"></a>
+			<a href="<?php echo base_url();?>masuk/event1"><img src="<?php echo base_url();?>assets/img/warpedtour.jpg" width="250" class="rounded mb-1"></a>
 			<h4>throw away</h4>
 		</div>
 		
 		<div class="col-md">
-			<a href="<?php echo base_url();?> "><img src="<?php echo base_url();?>assets/img/dwp.jpg " width="250" class="rounded mb-1"></a>
+			<a href="<?php echo base_url();?>masuk/event2"><img src="<?php echo base_url();?>assets/img/dwp.jpg " width="250" class="rounded mb-1"></a>
 			<h4>Set the road</h4>
 		</div>
 		
 		<div class="col-md">
-			<a href="<?php echo base_url();?> "><img src="<?php echo base_url();?>assets/img/rockimring.jpg " width="250" class="rounded mb-1"></a>
+			<a href="<?php echo base_url();?>masuk/event3"><img src="<?php echo base_url();?>assets/img/rockimring.jpg " width="250" class="rounded mb-1"></a>
 			<h4>War Service</h4>
 		</div>
 		
 		<div class="col-md">
-			<a href="<?php echo base_url();?> "><img src="<?php echo base_url();?>assets/img/hellfest.jpg " width="250" class="rounded mb-1"></a>
+			<a href="<?php echo base_url();?>masuk/event4"><img src="<?php echo base_url();?>assets/img/hellfest.jpg " width="250" class="rounded mb-1"></a>
 			<h4>Dest</h4>
 		</div>
 	</div>
@@ -351,7 +351,7 @@
 </div>
 </section>
 
-<!--model regis-->
+<!--model regis
 <div class="modal fade bd-example-modal-sm" id="regis" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-sm" role="document">
     <div class="modal-content">
@@ -407,7 +407,7 @@
   </div>
 </div>
 
-<!--model mentor-->
+<!--model mentor
 <div class="modal fade bd-example-modal-sm" id="regismentor" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-sm" role="document">
     <div class="modal-content">
@@ -463,7 +463,7 @@
   </div>
 </div>
 
-<!--model company-->
+<!--model company
 <div class="modal fade bd-example-modal-sm" id="regiscompany" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-sm" role="document">
     <div class="modal-content">
@@ -521,7 +521,7 @@
 
 
 
-<!--LOGIN-->
+<!--LOGIN
 <div class="modal fade bd-example-modal-sm" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-sm" role="document">
     <div class="modal-content">
@@ -556,7 +556,7 @@
       </div>
     </div>
   </div>
-</div>
+</div>-->
 <div class="container-fluid text-light pb-1 pt-3 "style="background-color: #3a3a3a;">
 <div class="container">
 <h6>azzzz</h6>

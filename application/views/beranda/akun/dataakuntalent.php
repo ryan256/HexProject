@@ -25,8 +25,8 @@
 		<div class="list-group">
 		<a href="#" class="list-group-item list-group-item-action">Upload Photo</a>
 		<a href="#" class="list-group-item list-group-item-action">Aktifkan Notifikasi</a>
-		<a href="<?php echo base_url();?>index.php/masuk/akun" class="list-group-item list-group-item-action">Account</a>
-		<a href="<?php echo base_url();?>index.php/masuk/dataakun" class="list-group-item list-group-item-action active">Edit Profile</a>
+		<a href="<?php echo base_url();?>masuk/akun" class="list-group-item list-group-item-action">Account</a>
+		<a href="<?php echo base_url();?>masuk/dataakun" class="list-group-item list-group-item-action active">Edit Profile</a>
 		</div>
 		</div>
 	
@@ -44,7 +44,7 @@
 	<h5 class="card-header">Data Pribadi</h5>
 		<div class="card-body">
 			
-		<form>
+		<form action="" method="POST">
 		<div class="row ml-2 pb-2 pt-4">
 		<div class="col-sm-4"><b>NIK</b></div>
 		<div class="col-sm-5"><input class="form-control form-control-sm" min="35000000000000" type="number" placeholder="Masukkan No KTP"></div>

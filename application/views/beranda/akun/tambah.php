@@ -38,36 +38,43 @@
 		
 <div class="col-lg-7">
 		
-	<div class="card">
+		<div class="card">
 		
 	<h5 class="card-header">Data Pribadi</h5>
 		<div class="card-body">
-		<?php if($this->session->flashdata('flash')) : ?>
-		<div class="alert alert-success alert-dismissible fade show" role="alert">
-		Data <strong>Berhasil</strong> <?php $this->session->flashdata('flash');?>.
-		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-			<span aria-hidden="true">&times;</span>
-			</button>
-			</div>
-		<?php endif ;?>
 		
-		<div class="row pb-4">
-			<div class="col-md-6">
-			<a href="<?php echo base_url();?>masuk/tambah" class="btn btn-danger">tambah data mahasiswa</a>
-			</div>
-			
+		<?php if(validation_errors()) :?>
+		
+		<div class="alert alert-danger" role="alert">
+		<?=validation_errors(); ?>
 		</div>
 		
-		<ul class="list-group">
-		<?php foreach($reg as $re): ?>
-		<li class="list-group-item">
-			<?= $re['username'];?>
+		<?php endif;?>
+		
+		<div class="row pb-4">
+			<div class="col-6">
 			
-			<a href="<?php base_url();?>masuk/hapus<?php $re['username']?>" 
-			class="badge badge-danger float-right" onclick="return confirm('yakin?');">Hapus</a>
-		</li>
-		</ul>
-		<?php endforeach;?>
+			<form action="tambah" method="post">
+			
+			<div class="form-group">
+			<label for="username">Username</label>
+			<input type="text" name="username" class="form-control" placeholder="Enter Username...">
+			</div>
+			
+			<div class="form-group">
+			<label for="email">Email</label>
+			<input type="text" name="email" class="form-control" placeholder="Enter Email...">
+			</div>
+			
+			<div class="form-group">
+			<label for="notelp">No.Telp</label>
+			<input type="text" name="notelp" class="form-control" placeholder="Enter Number...">
+			</div>
+			
+			<button type="submit" name="tambah" class="btn btn-success float-right">TAmbah</button>
+			</form>
+			</div>
+		</div>
 		</div>
 		</div>
 	</div>

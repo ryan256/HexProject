@@ -16,7 +16,7 @@
   
   
 <nav class="navbar fixed-top navbar-expand-lg navbar-light shadow-sm p-3 mb-5 rounded" style="background-color: #e0dfdc;">
-  <a class="navbar-brand mr-3" href="<?php echo base_url();?>index.php/masuk/berandamasuk"><img src="<?php echo base_url();?>assets/img/hexIcons.png" width="100"></a>
+  <a class="navbar-brand mr-3" href="<?php echo base_url();?>masuk/berandamasuk"><img src="<?php echo base_url();?>assets/img/hexIcons.png" width="100"></a>
 
    
    <ul class="navbar-nav mr-5">
@@ -78,7 +78,7 @@
         </button>
 		</a>
         <div class="dropdown-menu" aria-labelledby="akun">
-          <a class="dropdown-item" href="<?php echo base_url();?>index.php/masuk/akun">Setting Akun</a>
+          <a class="dropdown-item" href="<?php echo base_url();?>masuk/akun">Setting Akun</a>
           <a class="dropdown-item" href="<?php echo base_url();?>#">Mentoring</a>
 		  <a class="dropdown-item" href="<?php echo base_url();?>#">Company</a>
 		  <a class="dropdown-item" href="<?php echo base_url();?>#">Job Linking</a>
