@@ -54,27 +54,27 @@
 		<div class="row pb-4">
 			<div class="col-6">
 			
-			<form action="tambah" method="post">
+			<form action="" method="post">
 			
 			<div class="form-group">
 			<label for="username">Username</label>
-			<input type="text" name="username" class="form-control" placeholder="Enter Username...">
+			<input type="text" name="username" value="<?= $reg['username'];?>" class="form-control" placeholder="Enter Username...">
 			<small class="form-text text-danger"><?= form_error('username');?></small>
 			</div>
 			
 			<div class="form-group">
 			<label for="email">Email</label>
-			<input type="text" name="email" class="form-control" placeholder="Enter Email...">
+			<input type="text" name="email" value="<?= $reg['email'];?>" class="form-control" placeholder="Enter Email...">
 			<small class="form-text text-danger"><?= form_error('email');?></small>
 		    </div>
 			
 			<div class="form-group">
 			<label for="notelp">No.Telp</label>
-			<input type="text" name="notelp" class="form-control" placeholder="Enter Number...">
+			<input type="text" name="notelp" value="<?= $reg['notelp'];?>" class="form-control" placeholder="Enter Number...">
 			<small class="form-text text-danger"><?= form_error('notelp');?></small>
 		    </div>
 			
-			<button type="submit" name="tambah" class="btn btn-success float-right">TAmbah</button>
+			<button type="submit" name="ubah" class="btn btn-info float-right">Ubah</button>
 			</form>
 			</div>
 		</div>

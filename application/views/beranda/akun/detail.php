@@ -43,40 +43,15 @@
 	<h5 class="card-header">Data Pribadi</h5>
 		<div class="card-body">
 		
-		<!--<?php// if(validation_errors()) :?>
-		
-		<div class="alert alert-danger" role="alert">
-		<?//=validation_errors(); ?>
-		</div>
-		
-		<?php// endif;?>-->
-		
 		<div class="row pb-4">
-			<div class="col-6">
-			
-			<form action="tambah" method="post">
-			
-			<div class="form-group">
-			<label for="username">Username</label>
-			<input type="text" name="username" class="form-control" placeholder="Enter Username...">
-			<small class="form-text text-danger"><?= form_error('username');?></small>
-			</div>
-			
-			<div class="form-group">
-			<label for="email">Email</label>
-			<input type="text" name="email" class="form-control" placeholder="Enter Email...">
-			<small class="form-text text-danger"><?= form_error('email');?></small>
-		    </div>
-			
-			<div class="form-group">
-			<label for="notelp">No.Telp</label>
-			<input type="text" name="notelp" class="form-control" placeholder="Enter Number...">
-			<small class="form-text text-danger"><?= form_error('notelp');?></small>
-		    </div>
-			
-			<button type="submit" name="tambah" class="btn btn-success float-right">TAmbah</button>
-			</form>
-			</div>
+			<div class="col-6 text-dark">
+            <h3><?= $reg['username']; ?></h3>
+            <h4><?= $reg['email']; ?></h4>
+            <h5><?= $reg['notelp']; ?></h5>
+            
+           <a href="<?=base_url();?>masuk/akun" class="btn btn-success">kembali</a>
+
+            </div>
 		</div>
 		</div>
 		</div>
