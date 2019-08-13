@@ -67,28 +67,28 @@
 		<h3>Event</h3></div>
 
   <div class="ml-auto p-2 bd-highlight">
-		<a href="<?php echo base_url();?>awal/event" class="text-danger"><h3>Others...</h3></a></div>
+		<a href="<?php echo base_url();?>masuk/event" class="text-danger"><h3>Others...</h3></a></div>
    </div>
 	
 	<div class="row mb-4 text-center">
 	
 		<div class="col-md ">
-			<a href="<?php echo base_url();?>awal/event1"><img src="<?php echo base_url();?>assets/img/warpedtour.jpg" width="250" class="rounded mb-1"></a>
+			<a href="<?php echo base_url();?>masuk/event1"><img src="<?php echo base_url();?>assets/img/warpedtour.jpg" width="250" class="rounded mb-1"></a>
 			<h4>throw away</h4>
 		</div>
 		
 		<div class="col-md">
-			<a href="<?php echo base_url();?>awal/event2"><img src="<?php echo base_url();?>assets/img/dwp.jpg " width="250" class="rounded mb-1"></a>
+			<a href="<?php echo base_url();?>masuk/event2"><img src="<?php echo base_url();?>assets/img/dwp.jpg " width="250" class="rounded mb-1"></a>
 			<h4>Set the road</h4>
 		</div>
 		
 		<div class="col-md">
-			<a href="<?php echo base_url();?>awal/event3"><img src="<?php echo base_url();?>assets/img/rockimring.jpg " width="250" class="rounded mb-1"></a>
+			<a href="<?php echo base_url();?>masuk/event3"><img src="<?php echo base_url();?>assets/img/rockimring.jpg " width="250" class="rounded mb-1"></a>
 			<h4>War Service</h4>
 		</div>
 		
 		<div class="col-md">
-			<a href="<?php echo base_url();?>awal/event4"><img src="<?php echo base_url();?>assets/img/hellfest.jpg " width="250" class="rounded mb-1"></a>
+			<a href="<?php echo base_url();?>masuk/event4"><img src="<?php echo base_url();?>assets/img/hellfest.jpg " width="250" class="rounded mb-1"></a>
 			<h4>Dest</h4>
 		</div>
 	</div>
@@ -351,7 +351,212 @@
 </div>
 </section>
 
+<!--model regis
+<div class="modal fade bd-example-modal-sm" id="regis" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Choose Yours</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      
+  <div class="card text-center">
+  <div class="card-header">
+    <ul class="nav nav-tabs card-header-tabs">
+      <li class="nav-item">
+        <button type="button" class="btn btn-light active">Talent</button>
+      </li>
+      <li class="nav-item">
+        <button type="button" class="btn btn-light" data-toggle="modal" data-target="#regismentor" data-dismiss="modal">Mentor</button>
+      </li>
+      <li class="nav-item">
+        <button type="button" class="btn btn-light" data-toggle="modal" data-target="#regiscompany" data-dismiss="modal">Company</button>
+      </li>
+    </ul>
+  </div>
+  <div class="card-body">
+  <img class="mb-4" src="<?php echo base_url();?>assets/img/hexIcons.png" alt="" width="100">
+  <form class="form-signin">
+		
+		<label for="inputEmail" class="sr-only">Email address</label>
+		<input type="email" id="inputEmail" class="form-control mb-3" placeholder="Email address" required autofocus>
+		
+		<label for="inputName" class="sr-only">Username</label>
+		<input type="name" id="inputName" class="form-control mb-3" placeholder="Username" required autofocus>
+	
+		  
+		<label for="inputPassword" class="sr-only">Password</label>
+		<input type="password" id="inputPassword" class="form-control mb-3" placeholder="Password" required>
+	
+  <button class="btn btn-primary btn-block" type="submit">Sign up</button>
+  <p class="mt-3 mb-2 text-muted">Do you have an account ? </p>
+  <button type="button" class="btn btn-link text-danger" data-toggle="modal" data-target="#login" data-dismiss="modal">
+  <b>Login Now</b></button>
+  </p>
+  <p class="mt-2 mb-3 text-muted">&copy; 2017-2019</p>
+  </form>
+  </div>
+</div>
+	  
+      <div class="modal-footer">
+        
+      </div>
+    </div>
+  </div>
+</div>
 
+<!--model mentor
+<div class="modal fade bd-example-modal-sm" id="regismentor" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Choose Yours</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      
+  <div class="card text-center">
+  <div class="card-header">
+    <ul class="nav nav-tabs card-header-tabs">
+      <li class="nav-item">
+        <button type="button" class="btn btn-light" data-toggle="modal" data-target="#regis" data-dismiss="modal">Talent</button>
+      </li>
+      <li class="nav-item">
+        <button type="button" class="btn btn-light active">Mentor</button>
+      </li>
+      <li class="nav-item">
+        <button type="button" class="btn btn-light" data-toggle="modal" data-target="#regiscompany" data-dismiss="modal">Company</button>
+      </li>
+    </ul>
+  </div>
+  <div class="card-body">
+  <img class="mb-4" src="<?php echo base_url();?>assets/img/hexIcons.png" alt="" width="100">
+  <form class="form-signin">
+		
+		<label for="inputEmail" class="sr-only">Email address</label>
+		<input type="email" id="inputEmail" class="form-control mb-3" placeholder="Email address" required autofocus>
+		
+		<label for="inputName" class="sr-only">Username</label>
+		<input type="name" id="inputName" class="form-control mb-3" placeholder="Username" required autofocus>
+		
+		  
+		<label for="inputPassword" class="sr-only">Password</label>
+		<input type="password" id="inputPassword" class="form-control mb-3" placeholder="Password" required>
+	
+  <button class="btn btn-primary btn-block" type="submit">Sign up</button>
+  <p class="mt-3 mb-2 text-muted">Do you have an account ? </p>
+  <button type="button" class="btn btn-link text-danger" data-toggle="modal" data-target="#login" data-dismiss="modal">
+  <b>Login Now</b></button>
+  </p>
+  <p class="mt-2 mb-3 text-muted">&copy; 2017-2019</p>
+  </form>
+  </div>
+</div>
+	  
+      <div class="modal-footer">
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--model company
+<div class="modal fade bd-example-modal-sm" id="regiscompany" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Choose Yours</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      
+  <div class="card text-center">
+  <div class="card-header">
+    <ul class="nav nav-tabs card-header-tabs">
+      <li class="nav-item">
+        <button type="button" class="btn btn-light" data-toggle="modal" data-target="#regis" data-dismiss="modal">Telent</button>
+      </li>
+      <li class="nav-item">
+        <button type="button" class="btn btn-light" data-toggle="modal" data-target="#regismentor" data-dismiss="modal">Mentor</button>
+      </li>
+      <li class="nav-item">
+        <button type="button" class="btn btn-light active">Company</button>
+      </li>
+    </ul>
+  </div>
+  <div class="card-body">
+  <img class="mb-4" src="<?php echo base_url();?>assets/img/hexIcons.png" alt="" width="100">
+  <form class="form-signin">
+		
+		<label for="inputEmail" class="sr-only">Company Email</label>
+		<input type="email" id="inputEmail" class="form-control mb-3" placeholder="Company Email" required autofocus>
+		
+		<label for="inputName" class="sr-only">Company Name</label>
+		<input type="name" id="inputName" class="form-control mb-3" placeholder="Company Name" required autofocus>
+		
+		  
+		<label for="inputPassword" class="sr-only">Password</label>
+		<input type="password" id="inputPassword" class="form-control mb-3" placeholder="Password" required>
+	
+  <button class="btn btn-primary btn-block" type="submit">Sign up</button>
+  <p class="mt-3 mb-2 text-muted">Do you have an account ? </p>
+  <button type="button" class="btn btn-link text-danger" data-toggle="modal" data-target="#login" data-dismiss="modal">
+  <b>Login Now</b></button>
+  </p>
+  <p class="mt-2 mb-3 text-muted">&copy; 2017-2019</p>
+  </form>
+  </div>
+</div>
+	  
+      <div class="modal-footer">
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!--LOGIN
+<div class="modal fade bd-example-modal-sm" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Please Sign In</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+      <form class="form-signin" action="<?= base_url();?>index.php/masuk/berandamasuk" method="POST">
+		<img class="mb-4" src="<?php echo base_url();?>assets/img/hexIcons.png" alt="" width="100">
+		
+		<label for="inputName" class="sr-only">Username</label>
+		<input type="name" id="inputEmail" class="form-control mb-3" placeholder="Username" required autofocus>
+		
+			  
+		<label for="inputPassword" class="sr-only">Password</label>
+		<input type="password" id="inputPassword" class="form-control mb-3" placeholder="Password" required>
+		
+  <button class="btn btn-primary btn-block" type="submit">Sign up</button>
+  
+  <p class="mt-3 mb-2 text-muted">Don't have an account ? Sign Up 
+  <button type="button" class="btn btn-link text-danger" data-toggle="modal" data-target="#regis" data-dismiss="modal">
+  <b>Daftar Sekarang</b></button>
+  </p>
+  
+  <p class="mt-2 mb-3 text-muted">&copy; 2017-2019</p>
+  </form>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>-->
 <div class="container-fluid text-light pb-1 pt-3 "style="background-color: #3a3a3a;">
 <div class="container">
 <h6>azzzz</h6>
