@@ -47,8 +47,8 @@
                                                 <option value="">Choose...</option>
 
                                                 <option value="talent">Talent</option>
-                                                <option value="Mentor">Mentor</option>
-                                                <option value="Company">Company</option>
+                                                <option value="mentor">Mentor</option>
+                                                <option value="company">Company</option>
                                             </select>
                                             <?= form_error('position', '<small class="text-danger pl-3">', '</small>'); ?>
                                         </div>

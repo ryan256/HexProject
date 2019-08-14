@@ -41,11 +41,12 @@ defined('BASEPATH') or exit('No direct script access allowed');
       </li>
 
     </ul>
-
-    <div class="input-group">
-      <input type="search" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
-      <div class="input-group-append mr-5">
-        <button class="btn btn-outline-primary" type="button" id="button-addon2">Search</button>
+    <div class="col-7">
+      <div class="input-group">
+        <input type="search" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
+        <div class="input-group-append mr-5">
+          <button class="btn btn-outline-primary" type="button" id="button-addon2">Search</button>
+        </div>
       </div>
     </div>
 
