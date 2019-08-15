@@ -171,19 +171,19 @@
 	<div class="d-flex flex-row bd-highlight mb-3">
 
 		<div class="p-2 bd-highlight">
-			<a href="<?php echo base_url(); ?>awal/position"><button type="button" class="btn" style="background-color: #e0dfdc;">
+			<a href="<?php echo base_url(); ?>company/position"><button type="button" class="btn" style="background-color: #e0dfdc;">
 					Traineer <span class="badge badge-light">4</span>
 				</button></a>
 		</div>
 
 		<div class="p-2 bd-highlight">
-			<a href="<?php echo base_url(); ?>awal/position"><button type="button" class="btn" style="background-color: #e0dfdc;">
+			<a href="<?php echo base_url(); ?>company/position"><button type="button" class="btn" style="background-color: #e0dfdc;">
 					Mentor <span class="badge badge-light">4</span>
 				</button></a>
 		</div>
 
 		<div class="p-2 bd-highlight">
-			<a href="<?php echo base_url(); ?>awal/position"><button type="button" class="btn" style="background-color: #e0dfdc;">
+			<a href="<?php echo base_url(); ?>company/position"><button type="button" class="btn" style="background-color: #e0dfdc;">
 					Company <span class="badge badge-light">4</span>
 				</button></a>
 		</div>
@@ -198,7 +198,6 @@
 			<div class="p-2 bd-highlight">
 				<h3>Our Partner</h3>
 			</div>
-
 
 		</div>
 

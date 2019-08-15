@@ -18,7 +18,7 @@
 
 
     <nav class="navbar fixed-top navbar-expand-lg navbar-light shadow-sm p-3 mb-5 rounded" style="background-color: #e0dfdc;">
-        <a class="navbar-brand mr-3" href="<?php echo base_url(); ?>client/index"><img src="<?php echo base_url(); ?>assets/img/hexIcons.png" width="100"></a>
+        <a class="navbar-brand mr-3" href="<?php echo base_url(); ?>mentor"><img src="<?php echo base_url(); ?>assets/img/hexIcons.png" width="100"></a>
 
 
         <ul class="navbar-nav mr-5">

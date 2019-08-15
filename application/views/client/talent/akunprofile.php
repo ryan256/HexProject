@@ -45,28 +45,31 @@
                                 <form>
                                     <div class="row ml-2 pb-2 pt-4">
                                         <div class="col-sm-4"><b>NIK</b></div>
-                                        <div class="col-sm-5"><input class="form-control form-control-sm" min="35000000000000" type="number" placeholder="Masukkan No KTP"></div>
+                                        <div class="col-sm-5">
+                                            <input class="form-control form-control-sm" name="nik" min="35000000000000" type="number" placeholder="Masukkan No KTP"></div>
                                     </div>
                                     <div class="row ml-2 pb-2">
                                         <div class="col-sm-4"><b>Tempat Lahir</b></div>
-                                        <div class="col-sm-5"><input class="form-control form-control-sm" type="text" placeholder="Tempat Lahir"></div>
+                                        <div class="col-sm-5">
+                                            <input class="form-control form-control-sm" name="tempatlahir" type="text" placeholder="Tempat Lahir"></div>
                                     </div>
                                     <div class="row ml-2 pb-2">
                                         <div class="col-sm-4"><b>Tanggal Lahir</b></div>
-                                        <div class="col-sm-5"><input class="form-control form-control-sm" type="date" placeholder="Tanggal Lahir"></div>
+                                        <div class="col-sm-5">
+                                            <input class="form-control form-control-sm" name="tanggallahir" type="date" placeholder="Tanggal Lahir"></div>
                                     </div>
                                     <div class="row ml-2 pb-3">
                                         <div class="col-sm-4"><b>Jenis Kelamin</b></div>
                                         <div class="col-sm-6">
 
                                             <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                                <input class="form-check-input" type="radio" name="jeniskelamin" value="laki-laki" checked>
                                                 <label class="form-check-label" for="exampleRadios1">
                                                     laki-laki
                                                 </label>
                                             </div>
                                             <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                                <input class="form-check-input" type="radio" name="jeniskelamin" value="Perempuan">
                                                 <label class="form-check-label" for="exampleRadios2">
                                                     Perempuan
                                                 </label>
@@ -76,47 +79,53 @@
                                     <div class="row ml-2 pb-3">
                                         <div class="col-sm-4"><b>Pendidikan Terakhir</b></div>
                                         <div class="col-sm-6">
-                                            <select class="form-control form-control-sm">
-                                                <option value="0">Small select</option>
-                                                <option value="sma">SMA</option>
-                                                <option value="smk">SMK</option>
-                                                <option value="s1">S1</option>
-                                                <option value="s2">S2</option>
+                                            <select class="form-control form-control-sm" name="pendidikanterakhir">
+                                                <option value="">Small select</option>
+                                                <option value="SMA">SMA</option>
+                                                <option value="SMK">SMK</option>
+                                                <option value="S1">S1</option>
+                                                <option value="S2">S2</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="row ml-2 pb-2">
                                         <div class="col-sm-4"><b>Alamat</b></div>
-                                        <div class="col-sm-5"><input class="form-control form-control-sm" type="text" placeholder="Alamat Tinggal"></div>
+                                        <div class="col-sm-5">
+                                            <input class="form-control form-control-sm" name="alamat" type="text" placeholder="Alamat Tinggal"></div>
                                     </div>
                                     <div class="row ml-2 pb-2">
                                         <div class="col-sm-4"><b>Kota</b></div>
-                                        <div class="col-sm-5"><input class="form-control form-control-sm" type="text" placeholder="Kota"></div>
+                                        <div class="col-sm-5">
+                                            <input class="form-control form-control-sm" name="kota" type="text" placeholder="Kota"></div>
                                     </div>
                                     <div class="row ml-2 pb-2">
                                         <div class="col-sm-4"><b>Provinsi</b></div>
-                                        <div class="col-sm-5"><input class="form-control form-control-sm" type="text" placeholder="Provinsi"></div>
+                                        <div class="col-sm-5">
+                                            <input class="form-control form-control-sm" name="provinsi" type="text" placeholder="Provinsi"></div>
                                     </div>
                                     <div class="row ml-2 pb-2">
                                         <div class="col-sm-4"><b>Kode Pos</b></div>
-                                        <div class="col-sm-5"><input class="form-control form-control-sm" type="text" placeholder="Kode Pos"></div>
+                                        <div class="col-sm-5">
+                                            <input class="form-control form-control-sm" name="kodepos" type="text" placeholder="Kode Pos"></div>
                                     </div>
                                     <div class="row ml-2 pb-2">
                                         <div class="col-sm-4"><b>Pekerjaan</b></div>
-                                        <div class="col-sm-5"><input class="form-control form-control-sm" type="text" placeholder="Pekerjaan"></div>
+                                        <div class="col-sm-5">
+                                            <input class="form-control form-control-sm" name="pekerjaan" type="text" placeholder="Pekerjaan"></div>
                                     </div>
                                     <div class="row ml-2 pb-2">
                                         <div class="col-sm-4"><b>No HP</b></div>
-                                        <div class="col-sm-7"><input class="form-control form-control-sm" type="tel" placeholder="No Handphone Aktif"></div>
+                                        <div class="col-sm-7">
+                                            <input class="form-control form-control-sm" name="nohp" type="number" placeholder="No Handphone Aktif"></div>
                                     </div>
-                                    <div class="row ml-2 pb-2">
-                                        <div class="col-sm-4"><b>Email</b></div>
-                                        <div class="col-sm-7"><input class="form-control form-control-sm" type="email" placeholder="Email"></div>
+
+                                    <div class="row">
+                                        <div class="col-2 ml-5 pt-5">
+                                            <button type="submit" class="btn btn-primary btn-block btn-sm">Save</button>
+                                        </div>
                                     </div>
 
 
-                                    <div class="ml-5 pt-5 ">
-                                        <button type="submit" class="btn btn-primary btn-sm">Save</button>
                                 </form>
 
                             </div>
