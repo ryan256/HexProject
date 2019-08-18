@@ -39,10 +39,24 @@ class mentor extends CI_Controller
     }
     public function dataakunprofile()
     {
-        $data['client'] = $this->db->get_where('client', ['email' => $this->session->userdata('email')])->row_array();
-        $data['title'] = 'Edit Profile Mentor | Hex.Inc';
-        $this->load->view('client/mentor/navmentor', $data);
-        $this->load->view('client/mentor/akunprofile');
-        $this->load->view('template/footer');
+        $this->form_validation->set_rules('nik', 'NIK', 'required|trim|numeric|min_length[35000000000000]');
+        $this->form_validation->set_rules('tempatlahir', 'Tempat Lahir', 'required|trim');
+        $this->form_validation->set_rules('tanggallahir', 'Tnggal Lahir', 'required|trim');
+        $this->form_validation->set_rules('pendidikanterakhir', 'Pendidkan Terakhir', 'required|trim');
+        $this->form_validation->set_rules('alamat', 'Alamat', 'required|trim');
+        $this->form_validation->set_rules('kota', 'Kota', 'required|trim');
+        $this->form_validation->set_rules('provinsi', 'Provinsi', 'required|trim');
+        $this->form_validation->set_rules('kodepos', 'Kode Pos', 'required|trim|numeric');
+        $this->form_validation->set_rules('pekerjaan', 'Pekerjaan', 'required|trim');
+        $this->form_validation->set_rules('nohp', 'No Hp', 'required|trim|numeric');
+        $this->form_validation->set_rules('materi', 'Materi', 'required|trim');
+
+        if ($this->form_validation->run() == false) {
+            $data['client'] = $this->db->get_where('client', ['email' => $this->session->userdata('email')])->row_array();
+            $data['title'] = 'Edit Profile Mentor | Hex.Inc';
+            $this->load->view('client/mentor/navmentor', $data);
+            $this->load->view('client/mentor/akunprofile');
+            $this->load->view('template/footer');
+        } else { }
     }
 }

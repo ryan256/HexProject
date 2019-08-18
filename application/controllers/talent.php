@@ -42,16 +42,16 @@ class talent extends CI_Controller
     }
     public function dataakunprofile()
     {
-        $this->form_validation->set_rules('nik', 'NIk', 'required|trim|numeric|min_length[35000000000000]');
-        $this->form_validation->set_rules('tempatlahir', 'NIk', 'required|trim');
-        $this->form_validation->set_rules('tanggallahir', 'NIk', 'required|trim');
-        $this->form_validation->set_rules('pendidikanterakhir', 'NIk', 'required|trim');
-        $this->form_validation->set_rules('alamat', 'NIk', 'required|trim');
-        $this->form_validation->set_rules('kota', 'NIk', 'required|trim');
-        $this->form_validation->set_rules('provinsi', 'NIk', 'required|trim');
-        $this->form_validation->set_rules('kodepos', 'NIk', 'required|trim|numeric');
-        $this->form_validation->set_rules('pekerjaan', 'NIk', 'required|trim');
-        $this->form_validation->set_rules('nohp', 'NIk', 'required|trim|numeric');
+        $this->form_validation->set_rules('nik', 'NIK', 'required|trim|numeric|min_length[35000000000000]');
+        $this->form_validation->set_rules('tempatlahir', 'Tempat Lahir', 'required|trim');
+        $this->form_validation->set_rules('tanggallahir', 'Tnggal Lahir', 'required|trim');
+        $this->form_validation->set_rules('pendidikanterakhir', 'Pendidkan Terakhir', 'required|trim');
+        $this->form_validation->set_rules('alamat', 'Alamat', 'required|trim');
+        $this->form_validation->set_rules('kota', 'Kota', 'required|trim');
+        $this->form_validation->set_rules('provinsi', 'Provinsi', 'required|trim');
+        $this->form_validation->set_rules('kodepos', 'Kode Pos', 'required|trim|numeric');
+        $this->form_validation->set_rules('pekerjaan', 'Pekerjaan', 'required|trim');
+        $this->form_validation->set_rules('nohp', 'No Hp', 'required|trim|numeric');
 
         if ($this->form_validation->run() == false) {
             $data['client'] = $this->db->get_where('client', ['email' => $this->session->userdata('email')])->row_array();
