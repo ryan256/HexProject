@@ -26,7 +26,7 @@
 										<a href="#" class="list-group-item list-group-item-action">Upload Photo</a>
 										<a href="#" class="list-group-item list-group-item-action">Aktifkan Notifikasi</a>
 										<a href="<?= base_url(); ?>talent/dataakun" class="list-group-item list-group-item-action active">Account</a>
-										<a href="<?= base_url(); ?>talent/dataakunprofile" class="list-group-item list-group-item-action">Edit Profile</a>
+										<a href="<?= base_url(); ?>talent/profil" class="list-group-item list-group-item-action">Profile</a>
 									</div>
 								</div>
 
@@ -34,7 +34,6 @@
 						</div>
 
 					</div>
-
 					<div class="col-lg-7">
 
 						<div class="card">

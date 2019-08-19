@@ -25,8 +25,8 @@
                                     <div class="list-group">
                                         <a href="#" class="list-group-item list-group-item-action">Upload Photo</a>
                                         <a href="#" class="list-group-item list-group-item-action">Aktifkan Notifikasi</a>
-                                        <a href="<?php echo base_url(); ?>mentor/dataakun" class="list-group-item list-group-item-action">Account</a>
-                                        <a href="<?php echo base_url(); ?>mentor/dataakunprofile" class="list-group-item list-group-item-action active">Edit Profile</a>
+                                        <a href="<?= base_url(); ?>mentor/dataakun" class="list-group-item list-group-item-action">Account</a>
+                                        <a href="<?= base_url(); ?>mentor/profil" class="list-group-item list-group-item-action active">Profile</a>
                                     </div>
                                 </div>
 
@@ -41,6 +41,9 @@
 
                             <h5 class="card-header">Data Pribadi</h5>
                             <div class="card-body">
+                                <nav class="nav">
+                                    <a class="nav-link" href="<?= base_url('mentor/profil'); ?>">Back Profile</a>
+                                </nav>
 
                                 <form>
                                     <div class="row ml-2 pb-2 pt-4">

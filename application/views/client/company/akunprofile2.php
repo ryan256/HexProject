@@ -39,7 +39,7 @@
 
 						<div class="card">
 
-							<h5 class="card-header">Data Penanggung Jawab</h5>
+							<h5 class="card-header">Data Usaha</h5>
 							<div class="card-body">
 								<nav class="nav">
 									<a class="nav-link" href="<?= base_url('company/profil'); ?>">Back Profile</a>
@@ -47,49 +47,25 @@
 
 								<ul class="nav nav-tabs">
 									<li class="nav-item">
-										<a class="nav-link active">Penanggung Jawab</a>
+										<a class="nav-link" href="<?= base_url('company/dataakunprofile'); ?>">Penanggung Jawab</a>
 									</li>
 									<li class="nav-item">
-										<a class="nav-link" href="<?= base_url('company/dataakunprofile2'); ?>">Data Perusahaan</a>
+										<a class="nav-link active">Data Perusahaan</a>
 									</li>
 								</ul>
 
-
 								<form>
 									<div class="row ml-2 pb-2 pt-4">
-										<div class="col-sm-4"><b>NIK</b></div>
-										<div class="col-sm-5"><input class="form-control form-control-sm" name="nik" type="number" placeholder="Masukkan No KTP"></div>
+										<div class="col-sm-4"><b>NPWP</b></div>
+										<div class="col-sm-5"><input class="form-control form-control-sm" name="npwp" type="number" placeholder="No NPWP"></div>
 									</div>
 									<div class="row ml-2 pb-2">
-										<div class="col-sm-4"><b>Tempat Lahir</b></div>
-										<div class="col-sm-5"><input class="form-control form-control-sm" name="tempatlahir" type="text" placeholder="Tempat Lahir"></div>
+										<div class="col-sm-4"><b>Nama</b></div>
+										<div class="col-sm-5"><input class="form-control form-control-sm" name="nama" type="text" placeholder="Nama Perusahaan"></div>
 									</div>
-									<div class="row ml-2 pb-2">
-										<div class="col-sm-4"><b>Tanggal Lahir</b></div>
-										<div class="col-sm-5"><input class="form-control form-control-sm" name="tempatlahir" type="date" placeholder="Tanggal Lahir"></div>
-									</div>
-									<div class="row ml-2 pb-3">
-										<div class="col-sm-4"><b>Jenis Kelamin</b></div>
-										<div class="col-sm-6">
-
-											<div class="form-check">
-												<input class="form-check-input" type="radio" name="jeniskelamin" id="jeniskelamin" value="Laki-laki" checked>
-												<label class="form-check-label" for="jeniskelamin">
-													Laki-laki
-												</label>
-											</div>
-											<div class="form-check">
-												<input class="form-check-input" type="radio" name="jeniskelamin" id="jeniskelamin" value="Perempuan">
-												<label class="form-check-label" for="jeniskelamin">
-													Perempuan
-												</label>
-											</div>
-										</div>
-									</div>
-
 									<div class="row ml-2 pb-2">
 										<div class="col-sm-4"><b>Alamat</b></div>
-										<div class="col-sm-5"><input class="form-control form-control-sm" name="alamat" type="text" placeholder="Alamat Tinggal"></div>
+										<div class="col-sm-5"><input class="form-control form-control-sm" name="alamat" type="text" placeholder="Alamat Perusahaan"></div>
 									</div>
 									<div class="row ml-2 pb-2">
 										<div class="col-sm-4"><b>Kota</b></div>
@@ -104,12 +80,35 @@
 										<div class="col-sm-5"><input class="form-control form-control-sm" name="kodepos" type="number" placeholder="Kode Pos"></div>
 									</div>
 									<div class="row ml-2 pb-2">
-										<div class="col-sm-4"><b>Jabatan</b></div>
-										<div class="col-sm-5"><input class="form-control form-control-sm" name="jabatan" type="text" placeholder="Jabatan Pekerjaan"></div>
+										<div class="col-sm-4"><b>Jumlah Pendapatan</b></div>
+										<div class="col-sm-7"><input class="form-control form-control-sm" name="jmlpendapatan" type="text" placeholder="Rata-Rata dlm setahun"></div>
 									</div>
 									<div class="row ml-2 pb-2">
-										<div class="col-sm-4"><b>No HP</b></div>
-										<div class="col-sm-7"><input class="form-control form-control-sm" name="nohp" type="number" placeholder="No Handphone Aktif"></div>
+										<div class="col-sm-4"><b>Jumlah Tenaga Kerja</b></div>
+										<div class="col-sm-7"><input class="form-control form-control-sm" name="jmltenagakerja" type="text" placeholder="Jml Karyawan"></div>
+									</div>
+									<div class="row ml-2 pb-3">
+										<div class="col-sm-4"><b>Jenis Usaha</b></div>
+										<div class="col-sm-6">
+											<select class="form-control form-control-sm">
+												<option value="">Pilih--</option>
+												<option value="PT">PT</option>
+												<option value="CV">CV</option>
+												<option value="Koperasi">Koperasi</option>
+												<option value="BUMN">BUMN</option>
+												<option value="Firma">Firma</option>
+												<option value="Lainya">Lainya</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="row ml-2 pb-2">
+										<div class="col-sm-4"><b>No Tlp</b></div>
+										<div class="col-sm-7"><input class="form-control form-control-sm" name="nohp" type="numeric" placeholder="No Tlp Perusahaan"></div>
+									</div>
+									<div class="row ml-2 pb-2">
+										<div class="col-sm-4"><b>Website</b></div>
+										<div class="col-sm-7"><input class="form-control form-control-sm" name="website" type="text" placeholder="Website Perusahaan"></div>
 									</div>
 
 
@@ -121,7 +120,6 @@
 								</form>
 
 							</div>
-
 
 						</div>
 					</div>

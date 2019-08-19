@@ -40,6 +40,17 @@ class talent extends CI_Controller
         $this->load->view('client/talent/akun');
         $this->load->view('template/footer');
     }
+
+
+    public function profil()
+    {
+        $data['client'] = $this->db->get_where('client', ['email' => $this->session->userdata('email')])->row_array();
+        $data['title'] = 'Profile Talent | Hex.Inc';
+        $this->load->view('client/talent/navtalent', $data);
+        $this->load->view('client/talent/profil');
+        $this->load->view('template/footer');
+    }
+
     public function dataakunprofile()
     {
         $this->form_validation->set_rules('nik', 'NIK', 'required|trim|numeric|min_length[35000000000000]');
