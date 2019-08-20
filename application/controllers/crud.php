@@ -12,7 +12,7 @@ class crud extends CI_Controller
             $data['reg'] = $this->username_model->cariData();
         }
 
-        $this->load->view('template/navberanda');
+        $this->load->view('crud/navberanda');
         $this->load->view('crud/akun', $data);
         $this->load->view('template/footer');
     }
@@ -26,14 +26,14 @@ class crud extends CI_Controller
         $this->form_validation->set_rules('notelp', 'No.Telp', 'required|numeric');
 
         if ($this->form_validation->run() == FALSE) {
-            $this->load->view('template/navberanda');
+            $this->load->view('crud/navberanda');
             $this->load->view('crud/tambah');
             $this->load->view('template/footer');
         } else {
 
             $this->username_model->tambahData();
             $this->session->set_flashdata('flash', 'Ditambahkan');
-            redirect('crud/akun');
+            redirect('crud');
         }
     }
 
@@ -41,14 +41,14 @@ class crud extends CI_Controller
     {
         $this->username_model->hapusData($username);
         $this->session->set_flashdata('flash', 'dihapus');
-        redirect('crud/akun');
+        redirect('crud');
     }
 
     public function detail($username)
     {
         $data['reg'] = $this->username_model->getDetail($username);
 
-        $this->load->view('template/navberanda');
+        $this->load->view('crud/navberanda');
         $this->load->view('crud/detail', $data);
         $this->load->view('template/footer');
     }
@@ -63,14 +63,14 @@ class crud extends CI_Controller
         $this->form_validation->set_rules('notelp', 'No.Telp', 'required|numeric');
 
         if ($this->form_validation->run() == FALSE) {
-            $this->load->view('template/navberanda');
+            $this->load->view('crud/navberanda');
             $this->load->view('crud/ubah', $data);
             $this->load->view('template/footer');
         } else {
 
             $this->username_model->ubahData();
             $this->session->set_flashdata('flash', 'Diubah');
-            redirect('client/akun');
+            redirect('crud');
         }
     }
 }

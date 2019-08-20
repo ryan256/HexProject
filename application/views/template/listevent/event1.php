@@ -21,9 +21,9 @@
 							Daftar
 						</button></div>
 
-					<div class="p-2 bd-highlight"><button type="button" class="btn btn-info btn-block mr-5">
+					<div class="p-2 bd-highlight"><a href="<?php echo base_url(); ?>assets/img/warpedtour.jpg" type=" button" class="btn btn-info btn-block mr-5" download>
 							Unduh
-						</button></div>
+						</a></div>
 				</div>
 			</div>
 
