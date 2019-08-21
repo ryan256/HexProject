@@ -72,5 +72,14 @@
 				<h4>Dest</h4>
 			</div>
 		</div>
+		<!--<div class="row">
+			<video class="col">
+				<video width="320" height="240" controls>
+					<source src="<? //= base_url('assets/video/'); 
+									?>Lamb Of God - Hourglass Live.mp4" type="video/mp4">
+
+				</video>
+			</video>
+		</div>-->
 	</div>
 </section>

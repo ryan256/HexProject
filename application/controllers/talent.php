@@ -42,12 +42,45 @@ class talent extends CI_Controller
     }
 
 
-    public function profil()
+    public function profil($id)
     {
         $data['client'] = $this->db->get_where('client', ['email' => $this->session->userdata('email')])->row_array();
 
 
-        $data['profiltalent'] = $this->db->get_where('profiltalent', ['talent_id'])->row_array();
+        $data['profiltalent'] = $this->db->get_where('profiltalent', ['talent_id' => $id])->row_array();
+
+        $data['title'] = 'Profile Talent | Hex.Inc';
+        $this->load->view('client/talent/navtalent', $data);
+        $this->load->view('client/talent/profil', $data);
+        $this->load->view('template/footer');
+    }
+
+    public function editprofil($id)
+    {
+        $data = [
+            "talent_id"           => $this->input->post('talent_id', true),
+            "name"                => $this->input->post('name', true),
+            "nik"                 => $this->input->post('nik', true),
+            "tempat_lahir"        => $this->input->post('tempat_lahir', true),
+            "tanggal_lahir"       => $this->input->post('tanggal_lahir', true),
+            "jenis_kelamin"       => $this->input->post('jenis_kelamin', true),
+            "pendidikan_terakhir" => $this->input->post('pendidikan_terakhir', true),
+            "alamat"              => $this->input->post('alamat', true),
+            "kota"                => $this->input->post('kota', true),
+            "provinsi"            => $this->input->post('provinsi', true),
+            "kode_pos"            => $this->input->post('kode_pos', true),
+            "pekerjaan"           => $this->input->post('pekerjaan', true),
+            "no_hp"               => $this->input->post('no_hp', true)
+
+        ];
+
+        $this->db->where('talent_id', $this->input->post('talent_id'));
+        $this->db->update('profiltalent', $data);
+
+        $data['client'] = $this->db->get_where('client', ['email' => $this->session->userdata('email')])->row_array();
+
+
+        $data['profiltalent'] = $this->db->get_where('profiltalent', ['talent_id' => $id])->row_array();
 
         $data['title'] = 'Profile Talent | Hex.Inc';
         $this->load->view('client/talent/navtalent', $data);
@@ -91,7 +124,7 @@ class talent extends CI_Controller
                 'provinsi'            => htmlspecialchars($this->input->post('provinsi')),
                 'kode_pos'            => htmlspecialchars($this->input->post('kode_pos')),
                 'pekerjaan'           => htmlspecialchars($this->input->post('pekerjaan')),
-                'no_hp'               => htmlspecialchars($this->input->post('no_hp')),
+                'no_hp'               => htmlspecialchars($this->input->post('no_hp'))
             ];
             $this->db->insert('profiltalent', $data);
             $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">

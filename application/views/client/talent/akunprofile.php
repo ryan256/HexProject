@@ -26,7 +26,7 @@
                                         <a href="#" class="list-group-item list-group-item-action">Upload Photo</a>
                                         <a href="#" class="list-group-item list-group-item-action">Aktifkan Notifikasi</a>
                                         <a href="<?= base_url(); ?>talent/dataakun" class="list-group-item list-group-item-action">Account</a>
-                                        <a href="<?= base_url(); ?>talent/profil" class="list-group-item list-group-item-action active">Profile</a>
+                                        <a href="<?= base_url(); ?>talent/profil/<?= $client['id']; ?>" class="list-group-item list-group-item-action active">Profile</a>
                                     </div>
                                 </div>
 
@@ -42,7 +42,7 @@
                             <h5 class="card-header">Data Pribadi</h5>
                             <div class="card-body">
                                 <nav class="nav">
-                                    <a class="nav-link" href="<?= base_url('talent/profil'); ?>">Back Profile</a>
+                                    <a class="nav-link" href="<?= base_url('talent/profil/'); ?><?= $client['id']; ?>">Back Profile</a>
                                 </nav>
 
                                 <form action="<?= base_url('talent/dataakunprofile'); ?>" method="post">
