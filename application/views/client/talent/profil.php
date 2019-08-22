@@ -45,9 +45,10 @@
                             <div class="card-body">
                                 <nav class="nav">
                                     <a class="nav-link" href="<?= base_url('talent/dataakunprofile'); ?>">Isi Profile</a>
-                                    <a class="nav-link" href="#editprofile" data-toggle="modal" data-target="#editprofile">
+                                    <!--<a class="nav-link" href="#editprofile" data-toggle="modal" data-target="#editprofile">
                                         Edit Profile
-                                    </a>
+                                    </a>-->
+                                    <a class="nav-link" href="<?= base_url('talent/editprofil/'); ?><?= $client['id']; ?>">Edit Profile</a>
 
 
                                 </nav>
@@ -140,8 +141,6 @@
 
                     <form action="<?= base_url('talent/editprofil/'); ?><?= $client['id']; ?>" method="post">
 
-                        <input type="hidden" id="talent_id" name="talent_id" value="<?= $client['id'] ?>">
-                        <input type="hidden" id="name" name="name" value="<?= $client['name'] ?>">
 
                         <div class="row ml-2 pb-2 pt-4">
                             <div class="col-sm-4"><b>NIK</b></div>

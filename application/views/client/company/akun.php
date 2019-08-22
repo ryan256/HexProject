@@ -26,7 +26,7 @@
 										<a href="#" class="list-group-item list-group-item-action">Upload Photo</a>
 										<a href="#" class="list-group-item list-group-item-action">Aktifkan Notifikasi</a>
 										<a href="<?= base_url(); ?>company/dataakun" class="list-group-item list-group-item-action active">Account</a>
-										<a href="<?= base_url(); ?>company/profil" class="list-group-item list-group-item-action">Profile</a>
+										<a href="<?= base_url(); ?>company/profil/<?= $client['id']; ?>" class="list-group-item list-group-item-action">Profile</a>
 									</div>
 								</div>
 
@@ -41,6 +41,9 @@
 
 							<h5 class="card-header">Data Pribadi</h5>
 							<div class="card-body">
+
+								<?= $this->session->flashdata('message'); ?>
+
 
 								<div class="card mb-3" style="max-width: 540px;">
 									<div class="row no-gutters">

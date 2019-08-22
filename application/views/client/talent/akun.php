@@ -41,6 +41,8 @@
 							<h5 class="card-header">Data Pribadi</h5>
 							<div class="card-body">
 
+								<?= $this->session->flashdata('message'); ?>
+
 								<div class="card mb-3" style="max-width: 540px;">
 									<div class="row no-gutters">
 										<div class="col-md-8">

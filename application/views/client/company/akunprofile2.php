@@ -26,7 +26,7 @@
 										<a href="#" class="list-group-item list-group-item-action">Upload Photo</a>
 										<a href="#" class="list-group-item list-group-item-action">Aktifkan Notifikasi</a>
 										<a href="<?= base_url(); ?>company/dataakun" class="list-group-item list-group-item-action">Account</a>
-										<a href="<?= base_url(); ?>talent/profil" class="list-group-item list-group-item-action active">Profile</a>
+										<a href="<?= base_url(); ?>talent/profil/<?= $client['id']; ?>" class="list-group-item list-group-item-action active">Profile</a>
 									</div>
 								</div>
 
@@ -42,7 +42,7 @@
 							<h5 class="card-header">Data Usaha</h5>
 							<div class="card-body">
 								<nav class="nav">
-									<a class="nav-link" href="<?= base_url('company/profil'); ?>">Back Profile</a>
+									<a class="nav-link" href="<?= base_url('company/profil/'); ?><?= $client['id']; ?>">Back Profile</a>
 								</nav>
 
 								<ul class="nav nav-tabs">
@@ -59,22 +59,22 @@
 										<div class="col-sm-4"><b>NPWP</b></div>
 										<div class="col-sm-5"><input class="form-control form-control-sm" name="npwp" type="number" placeholder="No NPWP"></div>
 									</div>
-									<div class="row ml-2 pb-2">
-										<div class="col-sm-4"><b>Nama</b></div>
-										<div class="col-sm-5"><input class="form-control form-control-sm" name="nama" type="text" placeholder="Nama Perusahaan"></div>
-									</div>
+
 									<div class="row ml-2 pb-2">
 										<div class="col-sm-4"><b>Alamat</b></div>
 										<div class="col-sm-5"><input class="form-control form-control-sm" name="alamat" type="text" placeholder="Alamat Perusahaan"></div>
 									</div>
+
 									<div class="row ml-2 pb-2">
 										<div class="col-sm-4"><b>Kota</b></div>
 										<div class="col-sm-5"><input class="form-control form-control-sm" name="kota" type="text" placeholder="Kota"></div>
 									</div>
+
 									<div class="row ml-2 pb-2">
 										<div class="col-sm-4"><b>Provinsi</b></div>
 										<div class="col-sm-5"><input class="form-control form-control-sm" name="provinsi" type="text" placeholder="Provinsi"></div>
 									</div>
+
 									<div class="row ml-2 pb-2">
 										<div class="col-sm-4"><b>Kode Pos</b></div>
 										<div class="col-sm-5"><input class="form-control form-control-sm" name="kodepos" type="number" placeholder="Kode Pos"></div>
@@ -83,10 +83,12 @@
 										<div class="col-sm-4"><b>Jumlah Pendapatan</b></div>
 										<div class="col-sm-7"><input class="form-control form-control-sm" name="jmlpendapatan" type="text" placeholder="Rata-Rata dlm setahun"></div>
 									</div>
+
 									<div class="row ml-2 pb-2">
 										<div class="col-sm-4"><b>Jumlah Tenaga Kerja</b></div>
 										<div class="col-sm-7"><input class="form-control form-control-sm" name="jmltenagakerja" type="text" placeholder="Jml Karyawan"></div>
 									</div>
+
 									<div class="row ml-2 pb-3">
 										<div class="col-sm-4"><b>Jenis Usaha</b></div>
 										<div class="col-sm-6">
@@ -106,6 +108,7 @@
 										<div class="col-sm-4"><b>No Tlp</b></div>
 										<div class="col-sm-7"><input class="form-control form-control-sm" name="nohp" type="numeric" placeholder="No Tlp Perusahaan"></div>
 									</div>
+
 									<div class="row ml-2 pb-2">
 										<div class="col-sm-4"><b>Website</b></div>
 										<div class="col-sm-7"><input class="form-control form-control-sm" name="website" type="text" placeholder="Website Perusahaan"></div>

@@ -57,35 +57,55 @@ class talent extends CI_Controller
 
     public function editprofil($id)
     {
-        $data = [
-            "talent_id"           => $this->input->post('talent_id', true),
-            "name"                => $this->input->post('name', true),
-            "nik"                 => $this->input->post('nik', true),
-            "tempat_lahir"        => $this->input->post('tempat_lahir', true),
-            "tanggal_lahir"       => $this->input->post('tanggal_lahir', true),
-            "jenis_kelamin"       => $this->input->post('jenis_kelamin', true),
-            "pendidikan_terakhir" => $this->input->post('pendidikan_terakhir', true),
-            "alamat"              => $this->input->post('alamat', true),
-            "kota"                => $this->input->post('kota', true),
-            "provinsi"            => $this->input->post('provinsi', true),
-            "kode_pos"            => $this->input->post('kode_pos', true),
-            "pekerjaan"           => $this->input->post('pekerjaan', true),
-            "no_hp"               => $this->input->post('no_hp', true)
+        $this->form_validation->set_rules('nik', 'NIK', 'required|trim|numeric|min_length[16]');
+        $this->form_validation->set_rules('tempat_lahir', 'Tempat Lahir', 'required|trim');
+        $this->form_validation->set_rules('tanggal_lahir', 'Tnggal Lahir', 'required|trim');
+        $this->form_validation->set_rules('pendidikan_terakhir', 'Pendidkan Terakhir', 'required|trim');
+        $this->form_validation->set_rules('alamat', 'Alamat', 'required|trim');
+        $this->form_validation->set_rules('kota', 'Kota', 'required|trim');
+        $this->form_validation->set_rules('provinsi', 'Provinsi', 'required|trim');
+        $this->form_validation->set_rules('kode_pos', 'Kode Pos', 'required|trim|numeric');
+        $this->form_validation->set_rules('pekerjaan', 'Pekerjaan', 'required|trim');
+        $this->form_validation->set_rules('no_hp', 'No Hp', 'required|trim|numeric');
 
-        ];
-
-        $this->db->where('talent_id', $this->input->post('talent_id'));
-        $this->db->update('profiltalent', $data);
-
-        $data['client'] = $this->db->get_where('client', ['email' => $this->session->userdata('email')])->row_array();
+        if ($this->form_validation->run() == FALSE) {
+            $data['client'] = $this->db->get_where('client', ['email' => $this->session->userdata('email')])->row_array();
 
 
-        $data['profiltalent'] = $this->db->get_where('profiltalent', ['talent_id' => $id])->row_array();
+            $data['profiltalent'] = $this->db->get_where('profiltalent', ['talent_id' => $id])->row_array();
 
-        $data['title'] = 'Profile Talent | Hex.Inc';
-        $this->load->view('client/talent/navtalent', $data);
-        $this->load->view('client/talent/profil', $data);
-        $this->load->view('template/footer');
+            $data['title'] = 'Profile Talent | Hex.Inc';
+            $this->load->view('client/talent/navtalent', $data);
+            $this->load->view('client/talent/editprofil', $data);
+            $this->load->view('template/footer');
+        } else {
+            $data = [
+                "talent_id"           => $this->input->post('talent_id', true),
+                "name"                => $this->input->post('name', true),
+                "nik"                 => $this->input->post('nik', true),
+                "tempat_lahir"        => $this->input->post('tempat_lahir', true),
+                "tanggal_lahir"       => $this->input->post('tanggal_lahir', true),
+                "jenis_kelamin"       => $this->input->post('jenis_kelamin', true),
+                "pendidikan_terakhir" => $this->input->post('pendidikan_terakhir', true),
+                "alamat"              => $this->input->post('alamat', true),
+                "kota"                => $this->input->post('kota', true),
+                "provinsi"            => $this->input->post('provinsi', true),
+                "kode_pos"            => $this->input->post('kode_pos', true),
+                "pekerjaan"           => $this->input->post('pekerjaan', true),
+                "no_hp"               => $this->input->post('no_hp', true)
+
+            ];
+
+            $this->db->where('talent_id', $this->input->post('talent_id'));
+            $this->db->update('profiltalent', $data);
+
+            $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">
+        Profile Berhasil Diedit dan <strong>Kembali ke Profile</strong>
+        </div>');
+
+
+            redirect('talent/dataakun');
+        }
     }
 
     public function dataakunprofile()
@@ -104,8 +124,6 @@ class talent extends CI_Controller
         if ($this->form_validation->run() == false) {
             $data['client'] = $this->db->get_where('client', ['email' => $this->session->userdata('email')])->row_array();
 
-
-
             $data['title'] = 'Edit Profile Talent | Hex.Inc';
             $this->load->view('client/talent/navtalent', $data);
             $this->load->view('client/talent/akunprofile', $data);
@@ -116,7 +134,7 @@ class talent extends CI_Controller
                 'name'                => htmlspecialchars($this->input->post('name')),
                 'nik'                 => htmlspecialchars($this->input->post('nik')),
                 'tempat_lahir'        => htmlspecialchars($this->input->post('tempat_lahir')),
-                'tanggal_lahir'       => htmlspecialchars($this->input->post('tanggal_lahir')),
+                'tanggal_lahir'                   => date($this->input->post('tanggal_lahir')),
                 'jenis_kelamin'       => htmlspecialchars($this->input->post('jenis_kelamin')),
                 'pendidikan_terakhir' => htmlspecialchars($this->input->post('pendidikan_terakhir')),
                 'alamat'              => htmlspecialchars($this->input->post('alamat')),
@@ -131,7 +149,11 @@ class talent extends CI_Controller
            Congratulation!
           </div>');
 
-            redirect('talent/profil');
+            $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">
+          Profile Berhasil Diisi dan <strong>Kembali ke Profile</strong>
+          </div>');
+
+            redirect('talent/dataakun');
         }
     }
 }

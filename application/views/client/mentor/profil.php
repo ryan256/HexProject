@@ -42,74 +42,71 @@
                             <h5 class="card-header">Data Pribadi</h5>
                             <div class="card-body">
                                 <nav class="nav">
-                                    <a class="nav-link" href="<?= base_url('mentor/dataakunprofile'); ?>">Edit Profile</a>
+                                    <a class="nav-link" href="<?= base_url('mentor/dataakunprofile'); ?>">Isi Profile</a>
+
+                                    <a class="nav-link" href="<?= base_url('mentor/editprofil/'); ?><?= $client['id']; ?>">Edit Profile</a>
                                 </nav>
 
                                 <form>
-                                    <div class="row ml-2 pb-2 pt-4">
+                                    <?= $this->session->flashdata('message'); ?>
+
+
+                                    <div class=" row ml-2 pb-2 pt-4">
                                         <div class="col-sm-4"><b>NIK</b></div>
-                                        <div class="col-sm-5">
-                                        </div>
+                                        <div class="col-sm-5"><?= $profilmentor['nik']; ?></div>
                                     </div>
 
                                     <div class="row ml-2 pb-2">
                                         <div class="col-sm-4"><b>Tempat Lahir</b></div>
-                                        <div class="col-sm-5">
-                                        </div>
+                                        <div class="col-sm-5"><?= $profilmentor['tempat_lahir']; ?></div>
                                     </div>
 
                                     <div class="row ml-2 pb-2">
                                         <div class="col-sm-4"><b>Tanggal Lahir</b></div>
-                                        <div class="col-sm-5">
-                                        </div>
+                                        <div class="col-sm-5"><?= $profilmentor['tanggal_lahir']; ?></div>
                                     </div>
 
                                     <div class="row ml-2 pb-3">
                                         <div class="col-sm-4"><b>Jenis Kelamin</b></div>
-                                        <div class="col-sm-6">
-                                        </div>
+                                        <div class="col-sm-6"><?= $profilmentor['jenis_kelamin']; ?></div>
                                     </div>
 
                                     <div class="row ml-2 pb-3">
-                                        <div class="col-sm-4"><b>Pendidikan Terakhir</b></div>
-                                        <div class="col-sm-6">
-                                        </div>
+                                        <div class="col-sm-4"><b>Pendidkan Terakhir</b></div>
+                                        <div class="col-sm-6"><?= $profilmentor['pendidikan_terakhir']; ?></div>
                                     </div>
 
                                     <div class="row ml-2 pb-2">
                                         <div class="col-sm-4"><b>Alamat</b></div>
-                                        <div class="col-sm-5">
-                                        </div>
+                                        <div class="col-sm-5"><?= $profilmentor['alamat']; ?></div>
                                     </div>
 
                                     <div class="row ml-2 pb-2">
                                         <div class="col-sm-4"><b>Kota</b></div>
-                                        <div class="col-sm-5">
-                                        </div>
+                                        <div class="col-sm-5"><?= $profilmentor['kota']; ?></div>
                                     </div>
-
                                     <div class="row ml-2 pb-2">
                                         <div class="col-sm-4"><b>Provinsi</b></div>
-                                        <div class="col-sm-5">
-                                        </div>
+                                        <div class="col-sm-5"><?= $profilmentor['provinsi']; ?></div>
                                     </div>
 
                                     <div class="row ml-2 pb-2">
                                         <div class="col-sm-4"><b>Kode Pos</b></div>
-                                        <div class="col-sm-5">
-                                        </div>
+                                        <div class="col-sm-5"><?= $profilmentor['kode_pos']; ?></div>
                                     </div>
-
                                     <div class="row ml-2 pb-2">
                                         <div class="col-sm-4"><b>Pekerjaan</b></div>
-                                        <div class="col-sm-5">
-                                        </div>
+                                        <div class="col-sm-5"><?= $profilmentor['pekerjaan']; ?></div>
                                     </div>
 
                                     <div class="row ml-2 pb-2">
                                         <div class="col-sm-4"><b>No HP</b></div>
-                                        <div class="col-sm-7">
-                                        </div>
+                                        <div class="col-sm-7"><?= $profilmentor['no_hp']; ?></div>
+                                    </div>
+
+                                    <div class="row ml-2 pb-2">
+                                        <div class="col-sm-4"><b>Materi</b></div>
+                                        <div class="col-sm-7"><?= $profilmentor['materi']; ?></div>
                                     </div>
 
                                 </form>
