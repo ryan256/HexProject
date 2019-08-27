@@ -14,7 +14,7 @@ class company extends CI_Controller
         $data['client'] = $this->db->get_where('client', ['email' => $this->session->userdata('email')])->row_array();
         $data['title'] = 'Beranda Company | Hex.Inc';
         $this->load->view('client/company/navcompany', $data);
-        $this->load->view('client/company/index', $data);
+        $this->load->view('client/index', $data);
         $this->load->view('template/footer');
     }
 
@@ -254,5 +254,50 @@ class company extends CI_Controller
 
             redirect('company/dataakun');
         }
+    }
+
+    public function event()
+    {
+        $data['client'] = $this->db->get_where('client', ['email' => $this->session->userdata('email')])->row_array();
+        $data['title'] = 'Event | Hex.Inc';
+        $this->load->view('client/company/navcompany', $data);
+        $this->load->view('client/event');
+        $this->load->view('template/footer');
+    }
+
+    public function event1()
+    {
+        $data['client'] = $this->db->get_where('client', ['email' => $this->session->userdata('email')])->row_array();
+        $data['title'] = 'Detail Event | Hex.Inc';
+        $this->load->view('client/company/navcompany', $data);
+        $this->load->view('client/listevent/event1');
+        $this->load->view('template/footer');
+    }
+
+    public function event2()
+    {
+        $data['client'] = $this->db->get_where('client', ['email' => $this->session->userdata('email')])->row_array();
+        $data['title'] = 'Detail Event | Hex.Inc';
+        $this->load->view('client/company/navcompany', $data);
+        $this->load->view('client/listevent/event2');
+        $this->load->view('template/footer');
+    }
+
+    public function event3()
+    {
+        $data['client'] = $this->db->get_where('client', ['email' => $this->session->userdata('email')])->row_array();
+        $data['title'] = 'Detail Event | Hex.Inc';
+        $this->load->view('client/company/navcompany', $data);
+        $this->load->view('client/listevent/event3');
+        $this->load->view('template/footer');
+    }
+
+    public function event4()
+    {
+        $data['client'] = $this->db->get_where('client', ['email' => $this->session->userdata('email')])->row_array();
+        $data['title'] = 'Detail Event | Hex.Inc';
+        $this->load->view('client/company/navcompany', $data);
+        $this->load->view('client/listevent/event1');
+        $this->load->view('template/footer');
     }
 }

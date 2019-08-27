@@ -9,9 +9,15 @@ class awal extends CI_Controller
 		$data['title'] = 'Beranda | Hex.Inc';
 
 		$this->load->view('template/navbar', $data);
-		//$this->load->view('awal/regis', $data);
-		//$this->load->view('awal/login', $data);
 		$this->load->view('awal/index');
+		$this->load->view('template/footer');
+	}
+
+	public function training1()
+	{
+		$data['title'] = 'Langkah-Langkah training| Hex.Inc';
+		$this->load->view('template/navbar', $data);
+		$this->load->view('template/training1');
 		$this->load->view('template/footer');
 	}
 
@@ -20,8 +26,6 @@ class awal extends CI_Controller
 		$data['title'] = 'Position | Hex.Inc';
 
 		$this->load->view('template/navbar', $data);
-		//$this->load->view('awal/regis', $data);
-		//$this->load->view('awal/login', $data);
 		$this->load->view('template/position');
 		$this->load->view('template/footer');
 	}
