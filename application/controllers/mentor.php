@@ -71,7 +71,7 @@ class mentor extends CI_Controller
 
             $data['profilmentor'] = $this->db->get_where('profilmentor', ['mentor_id' => $id])->row_array();
 
-            $data['title'] = 'Profile Talent | Hex.Inc';
+            $data['title'] = 'Profile mentor | Hex.Inc';
             $this->load->view('client/mentor/navmentor', $data);
             $this->load->view('client/mentor/editprofil', $data);
             $this->load->view('template/footer');
@@ -156,6 +156,88 @@ class mentor extends CI_Controller
             redirect('mentor/dataakun');
         }
     }
+
+
+
+    public function training1()
+    {
+        $data['client'] = $this->db->get_where('client', ['email' => $this->session->userdata('email')])->row_array();
+        $data['title'] = 'Langkah-langkah Training | Hex.Inc';
+        $this->load->view('client/mentor/navmentor', $data);
+        $this->load->view('client/training1');
+        $this->load->view('template/footer');
+    }
+    public function socialmediamng()
+    {
+        $data['client'] = $this->db->get_where('client', ['email' => $this->session->userdata('email')])->row_array();
+        $data['title'] = 'Social Media Management| Hex.Inc';
+        $this->load->view('client/mentor/navmentor', $data);
+        $this->load->view('client/pilihantraining/socialmedia');
+        $this->load->view('template/footer');
+    }
+    public function contentmng()
+    {
+        $data['client'] = $this->db->get_where('client', ['email' => $this->session->userdata('email')])->row_array();
+        $data['title'] = 'Content Management| Hex.Inc';
+        $this->load->view('client/mentor/navmentor', $data);
+        $this->load->view('client/pilihantraining/contentmng');
+        $this->load->view('template/footer');
+    }
+    public function social()
+    {
+        $data['client'] = $this->db->get_where('client', ['email' => $this->session->userdata('email')])->row_array();
+        $data['title'] = 'Social| Hex.Inc';
+        $this->load->view('client/mentor/navmentor', $data);
+        $this->load->view('client/pilihantraining/social');
+        $this->load->view('template/footer');
+    }
+    public function tourism()
+    {
+        $data['client'] = $this->db->get_where('client', ['email' => $this->session->userdata('email')])->row_array();
+        $data['title'] = 'Tourism| Hex.Inc';
+        $this->load->view('client/mentor/navmentor', $data);
+        $this->load->view('client/pilihantraining/Tourism');
+        $this->load->view('template/footer');
+    }
+    public function education()
+    {
+        $data['client'] = $this->db->get_where('client', ['email' => $this->session->userdata('email')])->row_array();
+        $data['title'] = 'Education| Hex.Inc';
+        $this->load->view('client/mentor/navmentor', $data);
+        $this->load->view('client/pilihantraining/education');
+        $this->load->view('template/footer');
+    }
+    public function healty()
+    {
+        $data['client'] = $this->db->get_where('client', ['email' => $this->session->userdata('email')])->row_array();
+        $data['title'] = 'Healty| Hex.Inc';
+        $this->load->view('client/mentor/navmentor', $data);
+        $this->load->view('client/pilihantraining/healty');
+        $this->load->view('template/footer');
+    }
+
+    public function energy()
+    {
+        $data['client'] = $this->db->get_where('client', ['email' => $this->session->userdata('email')])->row_array();
+        $data['title'] = 'Energy| Hex.Inc';
+        $this->load->view('client/mentor/navmentor', $data);
+        $this->load->view('client/pilihantraining/energy');
+        $this->load->view('template/footer');
+    }
+
+    public function smartcity()
+    {
+        $data['client'] = $this->db->get_where('client', ['email' => $this->session->userdata('email')])->row_array();
+        $data['title'] = 'Smart City| Hex.Inc';
+        $this->load->view('client/mentor/navmentor', $data);
+        $this->load->view('client/pilihantraining/smartcity');
+        $this->load->view('template/footer');
+    }
+
+
+
+
+
     public function event()
     {
         $data['client'] = $this->db->get_where('client', ['email' => $this->session->userdata('email')])->row_array();

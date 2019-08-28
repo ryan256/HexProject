@@ -53,13 +53,13 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
     <div class="d-flex justify-content-end">
       <div class="p-2 bd-highlight">
-        <a href="<?= base_url() ?>auth" type=" button" class="btn btn-danger btn-block mr-5">
+        <a href="<?= base_url(); ?>auth" type=" button" class="btn btn-danger btn-block mr-5">
 
           Masuk
         </a></div>
 
       <div class="p-2 bd-highlight">
-        <a href="<?= base_url() ?>auth/register" type=" button" class="btn btn-warning btn-block mr-5">
+        <a href="<?= base_url(); ?>auth/register" type=" button" class="btn btn-warning btn-block mr-5">
           Daftar
         </a></div>
     </div>

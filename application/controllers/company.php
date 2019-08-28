@@ -158,6 +158,88 @@ class company extends CI_Controller
         }
     }
 
+
+
+
+    public function training1()
+    {
+        $data['client'] = $this->db->get_where('client', ['email' => $this->session->userdata('email')])->row_array();
+        $data['title'] = 'Langkah-langkah Training | Hex.Inc';
+        $this->load->view('client/company/navcompany', $data);
+        $this->load->view('client/training1');
+        $this->load->view('template/footer');
+    }
+    public function socialmediamng()
+    {
+        $data['client'] = $this->db->get_where('client', ['email' => $this->session->userdata('email')])->row_array();
+        $data['title'] = 'Social Media Management| Hex.Inc';
+        $this->load->view('client/company/navcompany', $data);
+        $this->load->view('client/pilihantraining/socialmedia');
+        $this->load->view('template/footer');
+    }
+    public function contentmng()
+    {
+        $data['client'] = $this->db->get_where('client', ['email' => $this->session->userdata('email')])->row_array();
+        $data['title'] = 'Content Management| Hex.Inc';
+        $this->load->view('client/company/navcompany', $data);
+        $this->load->view('client/pilihantraining/contentmng');
+        $this->load->view('template/footer');
+    }
+    public function social()
+    {
+        $data['client'] = $this->db->get_where('client', ['email' => $this->session->userdata('email')])->row_array();
+        $data['title'] = 'Social| Hex.Inc';
+        $this->load->view('client/company/navcompany', $data);
+        $this->load->view('client/pilihantraining/social');
+        $this->load->view('template/footer');
+    }
+    public function tourism()
+    {
+        $data['client'] = $this->db->get_where('client', ['email' => $this->session->userdata('email')])->row_array();
+        $data['title'] = 'Tourism| Hex.Inc';
+        $this->load->view('client/company/navcompany', $data);
+        $this->load->view('client/pilihantraining/Tourism');
+        $this->load->view('template/footer');
+    }
+    public function education()
+    {
+        $data['client'] = $this->db->get_where('client', ['email' => $this->session->userdata('email')])->row_array();
+        $data['title'] = 'Education| Hex.Inc';
+        $this->load->view('client/company/navcompany', $data);
+        $this->load->view('client/pilihantraining/education');
+        $this->load->view('template/footer');
+    }
+    public function healty()
+    {
+        $data['client'] = $this->db->get_where('client', ['email' => $this->session->userdata('email')])->row_array();
+        $data['title'] = 'Healty| Hex.Inc';
+        $this->load->view('client/company/navcompany', $data);
+        $this->load->view('client/pilihantraining/healty');
+        $this->load->view('template/footer');
+    }
+
+    public function energy()
+    {
+        $data['client'] = $this->db->get_where('client', ['email' => $this->session->userdata('email')])->row_array();
+        $data['title'] = 'Energy| Hex.Inc';
+        $this->load->view('client/company/navcompany', $data);
+        $this->load->view('client/pilihantraining/energy');
+        $this->load->view('template/footer');
+    }
+
+    public function smartcity()
+    {
+        $data['client'] = $this->db->get_where('client', ['email' => $this->session->userdata('email')])->row_array();
+        $data['title'] = 'Smart City| Hex.Inc';
+        $this->load->view('client/company/navcompany', $data);
+        $this->load->view('client/pilihantraining/smartcity');
+        $this->load->view('template/footer');
+    }
+
+
+
+
+
     public function dataakunprofile()
     {
         $this->form_validation->set_rules('nik', 'NIK', 'required|trim|numeric|min_length[16]');
