@@ -50,7 +50,7 @@
                     </div>
                 </div>
                 <div class="p-2 bd-highlight">
-                    <a href="<?= base_url(); ?><?= $client['position']; ?>/energy" type=" button" class="btn btn-danger btn-block">
+                    <a href="<?= base_url(); ?><?= $client['position']; ?>/pilihmntenergy" type=" button" class="btn btn-danger btn-block">
 
                         JOIN TRAINING
                     </a>

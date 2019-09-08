@@ -124,7 +124,7 @@
 			</div>
 
 			<div class="ml-auto p-2 bd-highlight">
-				<a href="<?php echo base_url(); ?>" class="text-danger">
+				<a href="<?= base_url('awal/comunity'); ?>" class="text-danger">
 					<h3>Others...</h3>
 				</a></div>
 		</div>

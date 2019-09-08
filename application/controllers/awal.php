@@ -29,4 +29,12 @@ class awal extends CI_Controller
 		$this->load->view('template/position');
 		$this->load->view('template/footer');
 	}
+	public function comunity()
+	{
+		$data['title'] = 'Comunity | Hex.Inc';
+
+		$this->load->view('template/navbar', $data);
+		$this->load->view('template/comunity');
+		$this->load->view('template/footer');
+	}
 }

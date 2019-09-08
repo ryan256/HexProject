@@ -237,6 +237,72 @@ class talent extends CI_Controller
 
 
 
+    public function pilihmntsocialmediamng()
+    {
+        $data['client'] = $this->db->get_where('client', ['email' => $this->session->userdata('email')])->row_array();
+        $data['title'] = 'Smart City| Hex.Inc';
+        $this->load->view('client/talent/navtalent', $data);
+        $this->load->view('client/pilihanmentor/socialmedia');
+        $this->load->view('template/footer');
+    }
+    public function pilihmntcontentmng()
+    {
+        $data['client'] = $this->db->get_where('client', ['email' => $this->session->userdata('email')])->row_array();
+        $data['title'] = 'Smart City| Hex.Inc';
+        $this->load->view('client/talent/navtalent', $data);
+        $this->load->view('client/pilihanmentor/content');
+        $this->load->view('template/footer');
+    }
+    public function pilihmnteducation()
+    {
+        $data['client'] = $this->db->get_where('client', ['email' => $this->session->userdata('email')])->row_array();
+        $data['title'] = 'Smart City| Hex.Inc';
+        $this->load->view('client/talent/navtalent', $data);
+        $this->load->view('client/pilihanmentor/educati');
+        $this->load->view('template/footer');
+    }
+    public function pilihmntenergy()
+    {
+        $data['client'] = $this->db->get_where('client', ['email' => $this->session->userdata('email')])->row_array();
+        $data['title'] = 'Smart City| Hex.Inc';
+        $this->load->view('client/talent/navtalent', $data);
+        $this->load->view('client/pilihanmentor/energ');
+        $this->load->view('template/footer');
+    }
+    public function pilihmnthealty()
+    {
+        $data['client'] = $this->db->get_where('client', ['email' => $this->session->userdata('email')])->row_array();
+        $data['title'] = 'Smart City| Hex.Inc';
+        $this->load->view('client/talent/navtalent', $data);
+        $this->load->view('client/pilihanmentor/healt');
+        $this->load->view('template/footer');
+    }
+    public function pilihmntsmartcity()
+    {
+        $data['client'] = $this->db->get_where('client', ['email' => $this->session->userdata('email')])->row_array();
+        $data['title'] = 'Smart City| Hex.Inc';
+        $this->load->view('client/talent/navtalent', $data);
+        $this->load->view('client/pilihanmentor/smartcty');
+        $this->load->view('template/footer');
+    }
+    public function pilihmntsocial()
+    {
+        $data['client'] = $this->db->get_where('client', ['email' => $this->session->userdata('email')])->row_array();
+        $data['title'] = 'Smart City| Hex.Inc';
+        $this->load->view('client/talent/navtalent', $data);
+        $this->load->view('client/pilihanmentor/soci');
+        $this->load->view('template/footer');
+    }
+    public function pilihmnttourism()
+    {
+        $data['client'] = $this->db->get_where('client', ['email' => $this->session->userdata('email')])->row_array();
+        $data['title'] = 'Smart City| Hex.Inc';
+        $this->load->view('client/talent/navtalent', $data);
+        $this->load->view('client/pilihanmentor/touris');
+        $this->load->view('template/footer');
+    }
+
+
 
 
     public function event()
