@@ -1,64 +1,73 @@
-<section id="Service" class="Service  pb-4">
-	<div class="container">
-		<div class="row mb-4 pt-4 pb-4">
-			<div class="col">
-				<h2></h2>
+<section id="Service" class="Service">
+	<div class="container-fluid shadow-sm p-3 rounded pb-2" style="background-image: url('<?php echo base_url('assets/img/line.jpg'); ?>');">
+
+		<div class="row mb-5 pt-5 pb-3 text-center">
+
+			<div class="col-md">
+				<a href="<?= base_url(); ?>awal/training1"><img src="<?php echo base_url(); ?>assets/img/social-media1png " width="70" class="rounded mb-1"></a>
+				<h5>Social Media</h5>
+			</div>
+
+			<div class="col-md"></div>
+
+			<div class="col-md">
+				<a href="<?= base_url(); ?>awal/training1"><img src="<?php echo base_url(); ?>assets/img/network.png" width="70" class="rounded mb-1"></a>
+				<h5>Social</h5>
+			</div>
+
+			<div class="col-md">
+				<a href="<?= base_url(); ?>awal/training1"><img src="<?php echo base_url(); ?>assets/img/tourist.png" width="70" class="rounded mb-1"></a>
+				<h5>Tourism</h5>
+			</div>
+			<div class="col-md"></div>
+		</div>
+
+
+		<div class="row mb-5 pb-3 text-center">
+
+			<div class="col-md"></div>
+
+			<div class="col-md">
+				<a href="<?php echo base_url(); ?>awal/training1"><img src="<?php echo base_url(); ?>assets/img/exercise.png " width="70" class="rounded mb-1"></a>
+				<h5>Healthy</h5>
+			</div>
+
+			<div class="col-md">
+				<a href="<?php echo base_url(); ?>awal/training1"><img src="<?php echo base_url(); ?>assets/img/innovation.png " width="70" class="rounded mb-1"></a>
+				<h5>Energy</h5>
+			</div>
+
+			<div class="col-md"></div>
+
+			<div class="col-md">
+				<a href="<?php echo base_url(); ?>awal/training1"><img src="<?php echo base_url(); ?>assets/img/cloud.png" width="70" class="rounded mb-1"></a>
+				<h5>Smart City</h5>
 			</div>
 		</div>
-		<div class="row mb-4 pt-4 pb-4">
-			<div class="col">
-				<h2></h2>
-			</div>
-		</div>
 
-		<div class="row mb-4 pb-3 text-center">
 
-			<div class="col-md ">
-				<a href="<?= base_url(); ?>awal/training1"><img src="<?php echo base_url(); ?>assets/img/social-media1png " width="90" class="rounded mb-1"></a>
-				<h4>Social Media</h4>
-			</div>
+		<div class="row mb-5 pb-2 text-center">
 
 			<div class="col-md">
-				<a href="<?= base_url(); ?>awal/training1"><img src="<?php echo base_url(); ?>assets/img/1472004.svg" width="90" class="rounded mb-1"></a>
-				<h4>Content Management</h4>
+				<a href="<?php echo base_url(); ?>awal/training1"><img src="<?php echo base_url(); ?>assets/img/edu.svg " width="70" class="rounded mb-1"></a>
+				<h5>Education</h5>
 			</div>
 
-			<div class="col-md">
-				<a href="<?= base_url(); ?>awal/training1"><img src="<?php echo base_url(); ?>assets/img/network.png" width="90" class="rounded mb-1"></a>
-				<h4>Social</h4>
-			</div>
+			<div class="col-md"></div>
+
+			<div class="col-md"></div>
 
 			<div class="col-md">
-				<a href="<?= base_url(); ?>awal/training1"><img src="<?php echo base_url(); ?>assets/img/tourist.png" width="90" class="rounded mb-1"></a>
-				<h4>Tourism</h4>
+				<a href="<?php echo base_url(); ?>awal/training1"><img src="<?php echo base_url(); ?>assets/img/cloud.png" width="70" class="rounded mb-1"></a>
+				<h5>Smart City</h5>
 			</div>
-		</div>
-		<div class="row mb-4 text-center">
+			<div class="col-md"></div>
 
-			<div class="col-md">
-				<a href="<?php echo base_url(); ?>awal/training1"><img src="<?php echo base_url(); ?>assets/img/edu.svg " width="90" class="rounded mb-1"></a>
-				<h4>Education</h4>
-			</div>
-
-			<div class="col-md">
-				<a href="<?php echo base_url(); ?>awal/training1"><img src="<?php echo base_url(); ?>assets/img/exercise.png " width="90" class="rounded mb-1"></a>
-				<h4>Healthy</h4>
-			</div>
-
-			<div class="col-md">
-				<a href="<?php echo base_url(); ?>awal/training1"><img src="<?php echo base_url(); ?>assets/img/innovation.png " width="90" class="rounded mb-1"></a>
-				<h4>Energy</h4>
-			</div>
-
-			<div class="col-md">
-				<a href="<?php echo base_url(); ?>awal/training1"><img src="<?php echo base_url(); ?>assets/img/cloud.png" width="90" class="rounded mb-1"></a>
-				<h4>Smart City</h4>
-			</div>
 		</div>
 	</div>
 </section>
 
-<section id="Event" class="Event  pb-4">
+<section id="Event" class="Event pb-4">
 	<div class="container">
 
 		<div class="d-flex bd-highlight mb-3">
@@ -77,22 +86,22 @@
 
 			<div class="col-md ">
 				<a href="<?php echo base_url(); ?>event/event1"><img src="<?php echo base_url(); ?>assets/img/warpedtour.jpg" width="250" class="rounded mb-1"></a>
-				<h4>throw away</h4>
+				<h5>throw away</h5>
 			</div>
 
 			<div class="col-md">
 				<a href="<?php echo base_url(); ?>event/event2"><img src="<?php echo base_url(); ?>assets/img/dwp.jpg " width="250" class="rounded mb-1"></a>
-				<h4>Set the road</h4>
+				<h5>Set the road</h5>
 			</div>
 
 			<div class="col-md">
 				<a href="<?php echo base_url(); ?>event/event3"><img src="<?php echo base_url(); ?>assets/img/rockimring.jpg " width="250" class="rounded mb-1"></a>
-				<h4>War Service</h4>
+				<h5>War Service</h5>
 			</div>
 
 			<div class="col-md">
 				<a href="<?php echo base_url(); ?>event/event4"><img src="<?php echo base_url(); ?>assets/img/hellfest.jpg " width="250" class="rounded mb-1"></a>
-				<h4>Dest</h4>
+				<h5>Dest</h5>
 			</div>
 		</div>
 	</div>
@@ -133,17 +142,17 @@
 
 			<div class="col-md ">
 				<a href="<?php echo base_url(); ?>"><img src="<?php echo base_url(); ?>assets/img/hex.PNG " width="300" class="rounded mb-1"></a>
-				<h4>throw away</h4>
+				<h5>throw away</h5>
 			</div>
 
 			<div class="col-md">
 				<a href="<?php echo base_url(); ?>"><img src="<?php echo base_url(); ?>assets/img/educations.jpg " width="300" class="rounded mb-1"></a>
-				<h4>Set the road</h4>
+				<h5>Set the road</h5>
 			</div>
 
 			<div class="col-md">
 				<a href="<?php echo base_url(); ?>"><img src="<?php echo base_url(); ?>assets/img/hexSocial.PNG " width="300" class="rounded mb-1"></a>
-				<h4>War Service</h4>
+				<h5>War Service</h5>
 			</div>
 		</div>
 	</div>
@@ -375,7 +384,7 @@
 
 		<div class="row">
 			<div class="col-8">
-				<img src="<?php echo base_url(); ?>assets/img/hexlogo.png" width="190">
+				<img src="<?php echo base_url(); ?>assets/img/hexlogo.png" width="170">
 			</div>
 
 			<div class="col-4">
