@@ -1,71 +1,96 @@
-<section id="Service" class="Service">
-	<div class="container-fluid shadow-sm p-3 rounded pb-2" style="background-image: url('<?php echo base_url('assets/img/line.jpg'); ?>');">
+<div class="pos-f-t">
+	<div class="collapse" id="navbarToggleExternalContent">
+		<div class="bg-dark p-4">
+			<h5 class="text-white h4 mb-3">Hex Digitalent</h5>
+			<section>
+				<div class="container-fluid shadow-sm p-3 rounded pb-2" style="background-image: url('<?php echo base_url('assets/img/2nd.jpg'); ?>');">
 
-		<div class="row mb-5 pt-5 pb-3 text-center">
+					<div class="row mb-5 pt-5 pb-5 text-center">
 
-			<div class="col-md">
-				<a href="<?= base_url(); ?>awal/training1"><img src="<?php echo base_url(); ?>assets/img/social-media1png " width="70" class="rounded mb-1"></a>
-				<h5>Social Media</h5>
-			</div>
+						<div class="col-md">
+							<a href="<?= base_url(); ?>auth/#login" class="text-decoration-none rounded mb-1 text-light">
+								<img src="<?php echo base_url(); ?>assets/img/log-in.png" width="70">
+								<h6>1. Daftar/Masuk</h6>
+							</a>
+						</div>
 
-			<div class="col-md"></div>
+						<div class="col-md"></div>
 
-			<div class="col-md">
-				<a href="<?= base_url(); ?>awal/training1"><img src="<?php echo base_url(); ?>assets/img/network.png" width="70" class="rounded mb-1"></a>
-				<h5>Social</h5>
-			</div>
+						<div class="col-md">
+							<a href="<?= base_url(); ?>awal/training1" class="nav-link text-decoration-none rounded mb-1 text-white-50 disabled" tabindex="-1" aria-disabled="true">
+								<img src="<?php echo base_url(); ?>assets/img/pmentorb.png" width="70">
+								<h6>3. Pilih Mentor</h6>
+							</a>
 
-			<div class="col-md">
-				<a href="<?= base_url(); ?>awal/training1"><img src="<?php echo base_url(); ?>assets/img/tourist.png" width="70" class="rounded mb-1"></a>
-				<h5>Tourism</h5>
-			</div>
-			<div class="col-md"></div>
-		</div>
+						</div>
 
+						<div class="col-md"></div>
 
-		<div class="row mb-5 pb-3 text-center">
+						<div class="col-md">
 
-			<div class="col-md"></div>
+							<a href="<?= base_url(); ?>awal/training1" class="nav-link text-decoration-none rounded text-white-50 disabled" tabindex="-1" aria-disabled="true">
+								<img src="<?php echo base_url(); ?>assets/img/kuisb.png" width="70" s>
+								<h6>5. Kuis</h6>
+							</a>
 
-			<div class="col-md">
-				<a href="<?php echo base_url(); ?>awal/training1"><img src="<?php echo base_url(); ?>assets/img/exercise.png " width="70" class="rounded mb-1"></a>
-				<h5>Healthy</h5>
-			</div>
+						</div>
 
-			<div class="col-md">
-				<a href="<?php echo base_url(); ?>awal/training1"><img src="<?php echo base_url(); ?>assets/img/innovation.png " width="70" class="rounded mb-1"></a>
-				<h5>Energy</h5>
-			</div>
+						<div class="col-md"></div>
 
-			<div class="col-md"></div>
+						<div class="col-md">
+							<a href="<?= base_url(); ?>awal/training1" class="nav-link text-decoration-none rounded mb-1 text-white-50 disabled" tabindex="-1" aria-disabled="true">
+								<img src="<?php echo base_url(); ?>assets/img/reviewb.png" width="70">
+								<h6>7. Review</h6>
+							</a>
+						</div>
 
-			<div class="col-md">
-				<a href="<?php echo base_url(); ?>awal/training1"><img src="<?php echo base_url(); ?>assets/img/cloud.png" width="70" class="rounded mb-1"></a>
-				<h5>Smart City</h5>
-			</div>
-		</div>
+					</div>
 
 
-		<div class="row mb-5 pb-2 text-center">
+					<div class="row mb-4 pb-4 text-center">
 
-			<div class="col-md">
-				<a href="<?php echo base_url(); ?>awal/training1"><img src="<?php echo base_url(); ?>assets/img/edu.svg " width="70" class="rounded mb-1"></a>
-				<h5>Education</h5>
-			</div>
+						<div class="col-md"></div>
 
-			<div class="col-md"></div>
+						<div class="col-md">
+							<a href="<?= base_url(); ?>awal/training1" class="nav-link text-decoration-none rounded text-white-50 disabled" tabindex="-1" aria-disabled="true">
+								<img src="<?php echo base_url(); ?>assets/img/pilihb.png " width="70">
+								<h6>2. Pilih Training</h6>
+							</a>
+						</div>
 
-			<div class="col-md"></div>
+						<div class="col-md"></div>
 
-			<div class="col-md">
-				<a href="<?php echo base_url(); ?>awal/training1"><img src="<?php echo base_url(); ?>assets/img/cloud.png" width="70" class="rounded mb-1"></a>
-				<h5>Smart City</h5>
-			</div>
-			<div class="col-md"></div>
+						<div class="col-md">
+							<a href="<?php echo base_url(); ?>awal/training1" class="nav-link text-decoration-none rounded text-white-50 disabled" tabindex="-1" aria-disabled="true">
+								<img src="<?php echo base_url(); ?>assets/img/trainingb.png " width="70">
+								<h6>4. Mulai Training</h6>
+							</a>
+						</div>
+
+						<div class="col-md"></div>
+
+						<div class="col-md">
+							<a href="<?php echo base_url(); ?>awal/training1" class="nav-link text-decoration-none rounded text-white-50 disabled" tabindex="-1" aria-disabled="true">
+								<img src="<?php echo base_url(); ?>assets/img/sertifikatb.png" width="70" s>
+								<h6>6. E-Sertificate</h5>
+							</a>
+						</div>
+
+						<div class="col-md"></div>
+
+					</div>
+			</section>
 
 		</div>
 	</div>
-</section>
+
+	<nav class="navbar navbar-dark bg-dark">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+	</nav>
+</div>
+
 
 <section id="Event" class="Event pb-4">
 	<div class="container">
@@ -85,22 +110,22 @@
 		<div class="row mb-4 text-center">
 
 			<div class="col-md ">
-				<a href="<?php echo base_url(); ?>event/event1"><img src="<?php echo base_url(); ?>assets/img/warpedtour.jpg" width="250" class="rounded mb-1"></a>
+				<a href="<?php echo base_url(); ?>event/event1"><img src="<?php echo base_url(); ?>assets/img/warpedtour.jpg" width="250" s></a>
 				<h5>throw away</h5>
 			</div>
 
 			<div class="col-md">
-				<a href="<?php echo base_url(); ?>event/event2"><img src="<?php echo base_url(); ?>assets/img/dwp.jpg " width="250" class="rounded mb-1"></a>
+				<a href="<?php echo base_url(); ?>event/event2"><img src="<?php echo base_url(); ?>assets/img/dwp.jpg " width="250" s></a>
 				<h5>Set the road</h5>
 			</div>
 
 			<div class="col-md">
-				<a href="<?php echo base_url(); ?>event/event3"><img src="<?php echo base_url(); ?>assets/img/rockimring.jpg " width="250" class="rounded mb-1"></a>
+				<a href="<?php echo base_url(); ?>event/event3"><img src="<?php echo base_url(); ?>assets/img/rockimring.jpg " width="250" s></a>
 				<h5>War Service</h5>
 			</div>
 
 			<div class="col-md">
-				<a href="<?php echo base_url(); ?>event/event4"><img src="<?php echo base_url(); ?>assets/img/hellfest.jpg " width="250" class="rounded mb-1"></a>
+				<a href="<?php echo base_url(); ?>event/event4"><img src="<?php echo base_url(); ?>assets/img/hellfest.jpg " width="250" s></a>
 				<h5>Dest</h5>
 			</div>
 		</div>
@@ -141,17 +166,17 @@
 		<div class="row mb-4 text-center">
 
 			<div class="col-md ">
-				<a href="<?php echo base_url(); ?>"><img src="<?php echo base_url(); ?>assets/img/hex.PNG " width="300" class="rounded mb-1"></a>
+				<a href="<?php echo base_url(); ?>"><img src="<?php echo base_url(); ?>assets/img/hex.PNG " width="300" s></a>
 				<h5>throw away</h5>
 			</div>
 
 			<div class="col-md">
-				<a href="<?php echo base_url(); ?>"><img src="<?php echo base_url(); ?>assets/img/educations.jpg " width="300" class="rounded mb-1"></a>
+				<a href="<?php echo base_url(); ?>"><img src="<?php echo base_url(); ?>assets/img/educations.jpg " width="300" s></a>
 				<h5>Set the road</h5>
 			</div>
 
 			<div class="col-md">
-				<a href="<?php echo base_url(); ?>"><img src="<?php echo base_url(); ?>assets/img/hexSocial.PNG " width="300" class="rounded mb-1"></a>
+				<a href="<?php echo base_url(); ?>"><img src="<?php echo base_url(); ?>assets/img/hexSocial.PNG " width="300" s></a>
 				<h5>War Service</h5>
 			</div>
 		</div>

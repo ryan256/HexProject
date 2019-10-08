@@ -379,7 +379,7 @@ class company extends CI_Controller
         $data['client'] = $this->db->get_where('client', ['email' => $this->session->userdata('email')])->row_array();
         $data['title'] = 'Detail Event | Hex.Inc';
         $this->load->view('client/company/navcompany', $data);
-        $this->load->view('client/listevent/event1');
+        $this->load->view('client/listevent/event4');
         $this->load->view('template/footer');
     }
 }

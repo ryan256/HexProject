@@ -304,6 +304,17 @@ class talent extends CI_Controller
 
 
 
+    public function mulaitraining()
+    {
+        $data['client'] = $this->db->get_where('client', ['email' => $this->session->userdata('email')])->row_array();
+        $data['title'] = 'Smart City| Hex.Inc';
+        $this->load->view('client/talent/navtalent', $data);
+        $this->load->view('client/materi1');
+        $this->load->view('template/footer');
+    }
+
+
+
 
     public function event()
     {
@@ -346,7 +357,7 @@ class talent extends CI_Controller
         $data['client'] = $this->db->get_where('client', ['email' => $this->session->userdata('email')])->row_array();
         $data['title'] = 'Detail Event | Hex.Inc';
         $this->load->view('client/talent/navtalent', $data);
-        $this->load->view('client/listevent/event1');
+        $this->load->view('client/listevent/event4');
         $this->load->view('template/footer');
     }
 }

@@ -1,14 +1,7 @@
 <section id="eventM" class="eventM pb-4">
 	<div class="container">
 
-		<div class="row mb-4 pt-5 pb-5">
-			<div class="col lg-6">
-				<h2></h2>
-			</div>
-		</div>
-
-
-		<div class="row justify-content-center">
+		<div class="row justify-content-center mt-4">
 
 			<div class="col-lg">
 
@@ -21,37 +14,45 @@
 							Daftar
 						</button></div>
 
-					<div class="p-2 bd-highlight"><a href="<?php echo base_url(); ?>assets/img/hellfest.jpg" type=" button" class="btn btn-info btn-block mr-5">
+					<div class="p-2 bd-highlight"><a href="<?php echo base_url(); ?>assets/img/hellfest.jpg" type=" button" class="btn btn-info btn-block mr-5" download>
 							Unduh
 						</a></div>
 				</div>
 			</div>
 
 			<div class="col-lg-4">
-				<div class="card">
-					<div class="card-body">
 
-						<div class="row ml-2 pb-2">
-							<a href="<?php echo base_url(); ?>event/event2">
-								<div class="col-sm-7"><img src="<?php echo base_url(); ?>assets/img/dwp.jpg" class="pb-3" width="130" alt="..."></div>
-							</a>
-							<div class="col-sm-4">Warped</div>
-						</div>
-						<div class="row ml-2 pb-2">
-							<a href="<?php echo base_url(); ?>event/event3">
-								<div class="col-sm-7"><img src="<?php echo base_url(); ?>assets/img/rockimring.jpg" class="pb-3" width="130" alt="..."></div>
-							</a>
-							<div class="col-sm-4">Sht</div>
-						</div>
-						<div class="row ml-2 pb-2">
-							<a href="<?php echo base_url(); ?>event/event1">
-								<div class="col-sm-7"><img src="<?php echo base_url(); ?>assets/img/warpedtour.jpg" class="pb-3" width="130" alt="..."></div>
-							</a>
-							<div class="col-sm-4">YoMM</div>
-						</div>
-
+				<div class="row no-gutters bg-light position-relative mb-3">
+					<div class="col-md-6 mb-md-0 p-md-4">
+						<img src="<?php echo base_url(); ?>assets/img/warpedtour.jpg" class="w-100" alt="...">
+					</div>
+					<div class="col-md-6 position-static p-4 pl-md-0">
+						<h5 class="mt-0">Event 3</h5>
+						<a href="<?php echo base_url(); ?><?= $client['position']; ?>/event1" class="stretched-link text-decoration-none text-dark">Go somewhere</a>
 					</div>
 				</div>
+
+				<div class="row no-gutters bg-light position-relative mt-3 mb-3">
+					<div class="col-md-6 mb-md-0 p-md-4">
+						<img src="<?php echo base_url(); ?>assets/img/rockimring.jpg" class="w-100" alt="...">
+					</div>
+					<div class="col-md-6 position-static p-4 pl-md-0">
+						<h5 class="mt-0">Event 3</h5>
+						<a href="<?php echo base_url(); ?><?= $client['position']; ?>/event3" class="stretched-link text-decoration-none text-dark">Go somewhere</a>
+					</div>
+				</div>
+
+				<div class="row no-gutters bg-light position-relative mt-3 mb-3">
+					<div class="col-md-6 mb-md-0 p-md-4">
+						<img src="<?php echo base_url(); ?>assets/img/dwp.jpg" class="w-100" alt="...">
+					</div>
+					<div class="col-md-6 position-static p-4 pl-md-0">
+						<h5 class="mt-0">Event 3</h5>
+						<a href="<?php echo base_url(); ?><?= $client['position']; ?>/event2" class="stretched-link text-decoration-none text-dark">Go somewhere</a>
+					</div>
+				</div>
+
+
 			</div>
 
 		</div>

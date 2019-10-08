@@ -10,6 +10,7 @@ class auth extends CI_Controller
 
         if ($this->form_validation->run() == false) {
             $data['title'] = 'Login Page';
+            $this->load->view('template/navbar', $data);
             $this->load->view('auth/login', $data);
         } else {
             $this->_login();
