@@ -12,6 +12,7 @@ class auth extends CI_Controller
             $data['title'] = 'Login Page';
             $this->load->view('template/navbar', $data);
             $this->load->view('auth/login', $data);
+            $this->load->view('template/footer');
         } else {
             $this->_login();
         }
@@ -85,7 +86,9 @@ class auth extends CI_Controller
 
         if ($this->form_validation->run() == false) {
             $data['title'] = 'Registration Page';
+            $this->load->view('template/navbar', $data);
             $this->load->view('auth/register', $data);
+            $this->load->view('template/footer');
         } else {
             $data = [
                 'name' => htmlspecialchars($this->input->post('name')),

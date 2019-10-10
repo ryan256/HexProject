@@ -12,140 +12,157 @@
     <title><?= $title ?></title>
 </head>
 
-<body class="bg-secondary">
-    <section>
-        <div class="container-fluid shadow-sm p-3 rounded pb-2" style="background-image: url('<?php echo base_url('assets/img/2nd.jpg'); ?>');">
+<body>
 
-            <div class="row mb-5 pt-5 pb-5 text-center">
+    <div class="pos-f-t">
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+                <h5 class="text-white h4">Step</h5>
+                <section>
+                    <div class="container-fluid shadow-sm p-3 rounded pb-2" style="background-image: url('<?php echo base_url('assets/img/2nd.jpg'); ?>');">
 
-                <div class="col-md">
-                    <a href="#login" class="text-decoration-none rounded mb-1 text-light">
-                        <img src="<?php echo base_url(); ?>assets/img/log-in.png" width="70">
-                        <h6>1. Daftar/Masuk</h6>
-                    </a>
-                </div>
+                        <div class="row mb-5 pt-5 pb-5 text-center">
 
-                <div class="col-md"></div>
+                            <div class="col-md">
+                                <a href="#login" class="text-decoration-none rounded mb-1 text-light">
+                                    <img src="<?php echo base_url(); ?>assets/img/log-in.png" width="70">
+                                    <h6>1. Daftar/Masuk</h6>
+                                </a>
+                            </div>
 
-                <div class="col-md">
-                    <a href="<?= base_url(); ?>awal/training1" class="nav-link text-decoration-none rounded mb-1 text-white-50 disabled" tabindex="-1" aria-disabled="true">
-                        <img src="<?php echo base_url(); ?>assets/img/pmentorb.png" width="70">
-                        <h6>3. Pilih Mentor</h6>
-                    </a>
+                            <div class="col-md"></div>
 
-                </div>
+                            <div class="col-md">
+                                <a href="<?= base_url(); ?>awal/training1" class="nav-link text-decoration-none rounded mb-1 text-white-50 disabled" tabindex="-1" aria-disabled="true">
+                                    <img src="<?php echo base_url(); ?>assets/img/pmentorb.png" width="70">
+                                    <h6>3. Pilih Mentor</h6>
+                                </a>
 
-                <div class="col-md"></div>
+                            </div>
 
-                <div class="col-md">
+                            <div class="col-md"></div>
 
-                    <a href="<?= base_url(); ?>awal/training1" class="nav-link text-decoration-none rounded text-white-50 disabled" tabindex="-1" aria-disabled="true">
-                        <img src="<?php echo base_url(); ?>assets/img/kuisb.png" width="70" s>
-                        <h6>5. Kuis</h6>
-                    </a>
+                            <div class="col-md">
 
-                </div>
+                                <a href="<?= base_url(); ?>awal/training1" class="nav-link text-decoration-none rounded text-white-50 disabled" tabindex="-1" aria-disabled="true">
+                                    <img src="<?php echo base_url(); ?>assets/img/kuisb.png" width="70" s>
+                                    <h6>5. Kuis</h6>
+                                </a>
 
-                <div class="col-md"></div>
+                            </div>
 
-                <div class="col-md">
-                    <a href="<?= base_url(); ?>awal/training1" class="nav-link text-decoration-none rounded mb-1 text-white-50 disabled" tabindex="-1" aria-disabled="true">
-                        <img src="<?php echo base_url(); ?>assets/img/reviewb.png" width="70">
-                        <h6>7. Review</h6>
-                    </a>
-                </div>
+                            <div class="col-md"></div>
+
+                            <div class="col-md">
+                                <a href="<?= base_url(); ?>awal/training1" class="nav-link text-decoration-none rounded mb-1 text-white-50 disabled" tabindex="-1" aria-disabled="true">
+                                    <img src="<?php echo base_url(); ?>assets/img/reviewb.png" width="70">
+                                    <h6>7. Review</h6>
+                                </a>
+                            </div>
+
+                        </div>
+
+
+                        <div class="row mb-4 pb-4 text-center">
+
+                            <div class="col-md"></div>
+
+                            <div class="col-md">
+                                <a href="<?= base_url(); ?>awal/training1" class="nav-link text-decoration-none rounded text-white-50 disabled" tabindex="-1" aria-disabled="true">
+                                    <img src="<?php echo base_url(); ?>assets/img/pilihb.png " width="70">
+                                    <h6>2. Pilih Training</h6>
+                                </a>
+                            </div>
+
+                            <div class="col-md"></div>
+
+                            <div class="col-md">
+                                <a href="<?php echo base_url(); ?>awal/training1" class="nav-link text-decoration-none rounded text-white-50 disabled" tabindex="-1" aria-disabled="true">
+                                    <img src="<?php echo base_url(); ?>assets/img/trainingb.png " width="70">
+                                    <h6>4. Mulai Training</h6>
+                                </a>
+                            </div>
+
+                            <div class="col-md"></div>
+
+                            <div class="col-md">
+                                <a href="<?php echo base_url(); ?>awal/training1" class="nav-link text-decoration-none rounded text-white-50 disabled" tabindex="-1" aria-disabled="true">
+                                    <img src="<?php echo base_url(); ?>assets/img/sertifikatb.png" width="70" s>
+                                    <h6>6. E-Sertificate</h5>
+                                </a>
+                            </div>
+
+                            <div class="col-md"></div>
+
+                        </div>
+                </section>
 
             </div>
+        </div>
 
-
-            <div class="row mb-4 pb-4 text-center">
-
-                <div class="col-md"></div>
-
-                <div class="col-md">
-                    <a href="<?= base_url(); ?>awal/training1" class="nav-link text-decoration-none rounded text-white-50 disabled" tabindex="-1" aria-disabled="true">
-                        <img src="<?php echo base_url(); ?>assets/img/pilihb.png " width="70">
-                        <h6>2. Pilih Training</h6>
-                    </a>
-                </div>
-
-                <div class="col-md"></div>
-
-                <div class="col-md">
-                    <a href="<?php echo base_url(); ?>awal/training1" class="nav-link text-decoration-none rounded text-white-50 disabled" tabindex="-1" aria-disabled="true">
-                        <img src="<?php echo base_url(); ?>assets/img/trainingb.png " width="70">
-                        <h6>4. Mulai Training</h6>
-                    </a>
-                </div>
-
-                <div class="col-md"></div>
-
-                <div class="col-md">
-                    <a href="<?php echo base_url(); ?>awal/training1" class="nav-link text-decoration-none rounded text-white-50 disabled" tabindex="-1" aria-disabled="true">
-                        <img src="<?php echo base_url(); ?>assets/img/sertifikatb.png" width="70" s>
-                        <h6>6. E-Sertificate</h5>
-                    </a>
-                </div>
-
-                <div class="col-md"></div>
-
-            </div>
-    </section>
+        <nav class="navbar navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="<?= base_url(); ?>assets/img/down1.png" width="30" alt="">
+            </button>
+        </nav>
+    </div>
 
     <!-- Outer Row -->
+    <div class="container-fluid bg-secondary">
 
-    <div id="login" class=" row justify-content-center pt-5">
+        <div id="login" class=" row justify-content-center pt-5">
 
-        <div class="col-lg-4">
+            <div class="col-lg-4">
 
-            <div class="card o-hidden border-0 shadow-lg my-5">
-                <div class="card-body p-0">
-                    <!-- Nested Row within Card Body -->
-                    <div class="row">
+                <div class="card o-hidden border-0 shadow-lg my-5">
+                    <div class="card-body p-0">
+                        <!-- Nested Row within Card Body -->
+                        <div class="row">
 
-                        <div class="col-lg">
-                            <div class="p-5">
-                                <div class="text-center">
-                                    <h1 class="h4 text-gray-900 mb-4">Please Sigh In</h1>
-                                </div>
-
-                                <?= $this->session->flashdata('message'); ?>
-
-                                <form class="user" method="post" action="">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control form-control-user" id="email" name="email" placeholder="Enter Email Address..." value="<?= set_value('email'); ?>">
-                                        <?= form_error('email', '<small class="text-danger pl-3">', '</small>'); ?>
+                            <div class="col-lg">
+                                <div class="p-5">
+                                    <div class="text-center">
+                                        <h1 class="h4 text-gray-900 mb-4">Please Sigh In</h1>
                                     </div>
 
-                                    <div class="form-group">
-                                        <input type="password" class="form-control form-control-user" id="password" name="password" placeholder="Password">
-                                        <?= form_error('password', '<small class="text-danger pl-3">', '</small>'); ?>
+                                    <?= $this->session->flashdata('message'); ?>
+
+                                    <form class="user" method="post" action="">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control form-control-user" id="email" name="email" placeholder="Enter Email Address..." value="<?= set_value('email'); ?>">
+                                            <?= form_error('email', '<small class="text-danger pl-3">', '</small>'); ?>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="password" class="form-control form-control-user" id="password" name="password" placeholder="Password">
+                                            <?= form_error('password', '<small class="text-danger pl-3">', '</small>'); ?>
+                                        </div>
+
+                                        <button type="submit" name="auth" class="btn btn-primary btn-user btn-block">
+                                            Login
+
+                                        </button>
+
+                                    </form>
+                                    <hr>
+                                    <div class="text-center">
+                                        <a class="small" href="forgot-password.html">Forgot Password?</a>
                                     </div>
-
-                                    <button type="submit" name="auth" class="btn btn-primary btn-user btn-block">
-                                        Login
-
-                                    </button>
-
-                                </form>
-                                <hr>
-                                <div class="text-center">
-                                    <a class="small" href="forgot-password.html">Forgot Password?</a>
-                                </div>
-                                <div class="text-center">
-                                    <a class="small" href="<?= base_url('auth/register'); ?>">Create an Account!</a>
-                                </div>
-                                <div class="text-center">
-                                    <a class="small" href="<?= base_url(); ?>awal"><b>Back To Home</b></a>
+                                    <div class="text-center">
+                                        <a class="small" href="<?= base_url('auth/register'); ?>">Create an Account!</a>
+                                    </div>
+                                    <div class="text-center">
+                                        <a class="small" href="<?= base_url(); ?>awal"><b>Back To Home</b></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
 
         </div>
-
     </div>
 
 

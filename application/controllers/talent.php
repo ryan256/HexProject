@@ -159,12 +159,12 @@ class talent extends CI_Controller
 
 
 
-    public function training1()
+    public function pilihmateri()
     {
         $data['client'] = $this->db->get_where('client', ['email' => $this->session->userdata('email')])->row_array();
         $data['title'] = 'Langkah-langkah Training | Hex.Inc';
         $this->load->view('client/talent/navtalent', $data);
-        $this->load->view('client/training1');
+        $this->load->view('client/pilihmateri');
         $this->load->view('template/footer');
     }
 
@@ -237,14 +237,16 @@ class talent extends CI_Controller
 
 
 
-    public function pilihmntsocialmediamng()
+    public function pilihmnt()
     {
         $data['client'] = $this->db->get_where('client', ['email' => $this->session->userdata('email')])->row_array();
         $data['title'] = 'Smart City| Hex.Inc';
         $this->load->view('client/talent/navtalent', $data);
-        $this->load->view('client/pilihanmentor/socialmedia');
+        $this->load->view('client/pilihanmentor/pilihmentor');
         $this->load->view('template/footer');
     }
+
+
     public function pilihmntcontentmng()
     {
         $data['client'] = $this->db->get_where('client', ['email' => $this->session->userdata('email')])->row_array();
@@ -304,16 +306,38 @@ class talent extends CI_Controller
 
 
 
-    public function mulaitraining()
+    public function materi1()
     {
         $data['client'] = $this->db->get_where('client', ['email' => $this->session->userdata('email')])->row_array();
         $data['title'] = 'Smart City| Hex.Inc';
         $this->load->view('client/talent/navtalent', $data);
-        $this->load->view('client/materi1');
+        $this->load->view('client/materi/materi1');
+        $this->load->view('template/footer');
+    }
+
+    public function materi2()
+    {
+        $data['client'] = $this->db->get_where('client', ['email' => $this->session->userdata('email')])->row_array();
+        $data['title'] = 'Smart City| Hex.Inc';
+        $this->load->view('client/talent/navtalent', $data);
+        $this->load->view('client/materi/materi2');
+        $this->load->view('template/footer');
+    }
+
+    public function materi3()
+    {
+        $data['client'] = $this->db->get_where('client', ['email' => $this->session->userdata('email')])->row_array();
+        $data['title'] = 'Smart City| Hex.Inc';
+        $this->load->view('client/talent/navtalent', $data);
+        $this->load->view('client/materi/materi3');
         $this->load->view('template/footer');
     }
 
 
+    public function kuis()
+    {
+        echo "comming soon";
+    }
 
 
     public function event()

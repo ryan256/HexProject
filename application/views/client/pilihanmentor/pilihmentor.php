@@ -1,7 +1,7 @@
 <div class="pos-f-t">
     <div class="collapse" id="navbarToggleExternalContent">
         <div class="bg-dark p-4">
-            <h5 class="text-white h4 mb-3">Hex Digitalent</h5>
+            <h5 class="text-white h4">Step</h5>
 
             <section>
                 <div class="container-fluid shadow-sm p-3 rounded pb-2" style="background-image: url('<?php echo base_url('assets/img/2nd.jpg'); ?>');">
@@ -87,7 +87,7 @@
 
     <nav class="navbar navbar-dark bg-dark">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <img src="<?= base_url(); ?>assets/img/down1.png" width="30" alt="">
         </button>
     </nav>
 </div>
@@ -105,7 +105,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Card with stretched link</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="<?= base_url() ?><?= $client['position']; ?>/mulaitraining" class="btn btn-primary stretched-link">Go somewhere</a>
+                            <a href="<?= base_url() ?><?= $client['position']; ?>/materi1" class="btn btn-primary stretched-link">Go somewhere</a>
                         </div>
                     </div>
                 </div>
@@ -116,7 +116,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Card with stretched link</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+                            <a href="<?= base_url() ?><?= $client['position']; ?>/materi1" class="btn btn-primary stretched-link">Go somewhere</a>
                         </div>
                     </div>
                 </div>
@@ -127,7 +127,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Card with stretched link</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+                            <a href="<?= base_url() ?><?= $client['position']; ?>/materi1" class="btn btn-primary stretched-link">Go somewhere</a>
                         </div>
                     </div>
                 </div>
@@ -138,7 +138,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Card with stretched link</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+                            <a href="<?= base_url() ?><?= $client['position']; ?>/materi1" class="btn btn-primary stretched-link">Go somewhere</a>
                         </div>
                     </div>
                 </div>
@@ -154,7 +154,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Card with stretched link</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+                            <a href="<?= base_url() ?><?= $client['position']; ?>/materi1" class="btn btn-primary stretched-link">Go somewhere</a>
                         </div>
                     </div>
                 </div>
@@ -165,7 +165,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Card with stretched link</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+                            <a href="<?= base_url() ?><?= $client['position']; ?>/materi1" class="btn btn-primary stretched-link">Go somewhere</a>
                         </div>
                     </div>
                 </div>
@@ -176,7 +176,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Card with stretched link</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+                            <a href="<?= base_url() ?><?= $client['position']; ?>/materi1" class="btn btn-primary stretched-link">Go somewhere</a>
                         </div>
                     </div>
                 </div>
@@ -187,7 +187,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Card with stretched link</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+                            <a href="<?= base_url() ?><?= $client['position']; ?>/materi1" class="btn btn-primary stretched-link">Go somewhere</a>
                         </div>
                     </div>
                 </div>

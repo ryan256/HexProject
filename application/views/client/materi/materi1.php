@@ -1,4 +1,4 @@
-<section id="eventM" class="eventM pb-4">
+<section>
     <div class="container-fluid">
 
 
@@ -7,23 +7,19 @@
             <div class="col-lg-3">
 
                 <div class="list-group overflow-auto">
-                    <button type="button" class="list-group-item list-group-item-action active">
+                    <button type="button" class="list-group-item list-group-item-action list-group-item-light active">
                         Materi 0
                     </button>
-                    <button type="button" class="list-group-item list-group-item-action">Materi 1</button>
-                    <button type="button" class="list-group-item list-group-item-action">Materi 2</button>
-                    <button type="button" class="list-group-item list-group-item-action">Materi 3</button>
-                    <button type="button" class="list-group-item list-group-item-action" disabled>Materi 4</button>
+                    <button type="button" class="list-group-item list-group-item-action list-group-item-light">Materi 1</button>
+                    <button type="button" class="list-group-item list-group-item-action list-group-item-light">Materi 2</button>
+
+
                 </div>
 
             </div>
 
             <div class="col-lg-9">
 
-
-                <div class="progress mb-3">
-                    <div class="progress-bar bg-success" role="progressbar" style="width: 15%;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">15%</div>
-                </div>
 
                 <iframe width="854" height="480" src="https://www.youtube.com/embed/aOV-hnhLvVE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -35,7 +31,7 @@
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit ea harum, quos, accusantium dolore a vero libero sit beatae, odio eveniet quibusdam. Aliquam quibusdam, unde quisquam libero reiciendis iste ad.
                 </p>
 
-                <button type="button" class="float-right btn btn-info btn-md">Selanjutnya</button>
+                <a href="<?= base_url(); ?><?= $client['position']; ?>/materi2" role="button" class=" float-right btn btn-info btn-md mb-4">Selanjutnya</a>
 
             </div>
 

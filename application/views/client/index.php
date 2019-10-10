@@ -97,7 +97,7 @@
 			<div class="col-md"></div>
 
 			<div class="col-md">
-				<a href="<?php echo base_url(); ?><?= $client['position']; ?>/training1/#training" class="nav-link text-decoration-none rounded text-light">
+				<a href="<?php echo base_url(); ?><?= $client['position']; ?>/pilihmateri/#training" class="nav-link text-decoration-none rounded text-light">
 					<img src="<?php echo base_url(); ?>assets/img/pilih.png " width="70">
 					<h6>2. Pilih Training</h6>
 				</a>
