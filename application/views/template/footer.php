@@ -1,3 +1,34 @@
+<!--<div class="position-absolute fixed-buttom float-right btn-group dropup">
+	<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		Dropup
+	</button>
+	<div class="dropdown-menu dropdown-menu-right">
+
+		<form class="px-4 py-3">
+			<div class="form-group">
+				<label for="exampleDropdownFormEmail1">Email address</label>
+				<input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+			</div>
+			<div class="form-group">
+				<label for="exampleDropdownFormPassword1">Password</label>
+				<input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+			</div>
+			<div class="form-group">
+				<div class="form-check">
+					<input type="checkbox" class="form-check-input" id="dropdownCheck">
+					<label class="form-check-label" for="dropdownCheck">
+						Remember me
+					</label>
+				</div>
+			</div>
+			<button type="submit" class="btn btn-primary">Sign in</button>
+		</form>
+		<div class="dropdown-divider"></div>
+		<a class="dropdown-item" href="#">New around here? Sign up</a>
+		<a class="dropdown-item" href="#">Forgot password?</a>s
+	</div>
+</div>-->
+
 <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">

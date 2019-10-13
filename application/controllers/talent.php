@@ -157,6 +157,15 @@ class talent extends CI_Controller
         }
     }
 
+    public function uploadphotoprofil()
+    {
+        $data['client'] = $this->db->get_where('client', ['email' => $this->session->userdata('email')])->row_array();
+        $data['title'] = 'Upload Photo Profil | Hex.Inc';
+        $this->load->view('client/talent/navtalent', $data);
+        $this->load->view('client/uploadphoto');
+        $this->load->view('template/footer');
+    }
+
 
 
     public function pilihmateri()

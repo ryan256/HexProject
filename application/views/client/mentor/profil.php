@@ -1,14 +1,5 @@
-<section id="akun" class="akun pb-4">
-    <div class="container">
-
-        <div class="row mb-4 pt-5 pb-5">
-            <div class="col">
-                <h2></h2>
-            </div>
-        </div>
-
-
-
+<section>
+    <div class="container mt-4 mb-4">
         <div class="card">
             <h2 class="card-header text-center">Account</h2>
             <div class="card-body">
@@ -23,10 +14,10 @@
 
                                 <div class="card-body pb-3">
                                     <div class="list-group">
-                                        <a href="#" class="list-group-item list-group-item-action">Upload Photo</a>
+                                        <a href="<?= base_url() ?><?= $client['position']; ?>/uploadphotoprofil" class="list-group-item list-group-item-action">Upload Photo</a>
                                         <a href="#" class="list-group-item list-group-item-action">Aktifkan Notifikasi</a>
-                                        <a href="<?= base_url(); ?>mentor/dataakun" class="list-group-item list-group-item-action">Account</a>
-                                        <a href="<?= base_url(); ?>mentor/profil" class="list-group-item list-group-item-action active">Profile</a>
+                                        <a href="<?= base_url(); ?><?= $client['position']; ?>/dataakun" class="list-group-item list-group-item-action">Account</a>
+                                        <a href="<?= base_url(); ?><?= $client['position']; ?>/profil" class="list-group-item list-group-item-action active">Profile</a>
                                     </div>
                                 </div>
 
@@ -42,9 +33,9 @@
                             <h5 class="card-header">Data Pribadi</h5>
                             <div class="card-body">
                                 <nav class="nav">
-                                    <a class="nav-link" href="<?= base_url('mentor/dataakunprofile'); ?>">Isi Profile</a>
+                                    <a class="nav-link" href="<?= base_url(); ?><?= $client['position']; ?>/dataakunprofile">Isi Profile</a>
 
-                                    <a class="nav-link" href="<?= base_url('mentor/editprofil/'); ?><?= $client['id']; ?>">Edit Profile</a>
+                                    <a class="nav-link" href="<?= base_url(); ?><?= $client['position']; ?>/editprofil/<?= $client['id']; ?>">Edit Profile</a>
                                 </nav>
 
                                 <form>

@@ -1,13 +1,5 @@
-<section id="akun" class="akun pb-4">
-    <div class="container">
-
-        <div class="row mb-4 pt-5 pb-5">
-            <div class="col">
-                <h2></h2>
-            </div>
-        </div>
-
-
+<section>
+    <div class="container mt-4 mb-4">
 
         <div class="card">
             <h2 class="card-header text-center">Account</h2>
@@ -23,10 +15,10 @@
 
                                 <div class="card-body pb-3">
                                     <div class="list-group">
-                                        <a href="<?= base_url(); ?>company/dataakun" class="list-group-item list-group-item-action">Upload Photo</a>
-                                        <a href="<?= base_url(); ?>company/dataakun" class="list-group-item list-group-item-action">Aktifkan Notifikasi</a>
-                                        <a href="<?= base_url(); ?>company/dataakun" class="list-group-item list-group-item-action">Account</a>
-                                        <a href="<?= base_url(); ?>talent/profil/<?= $client['id']; ?>" class="list-group-item list-group-item-action active">Profile</a>
+                                        <a href="<?= base_url() ?><?= $client['position']; ?>/uploadphotoprofil" class="list-group-item list-group-item-action">Upload Photo</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Aktifkan Notifikasi</a>
+                                        <a href="<?= base_url(); ?><?= $client['position']; ?>/dataakun" class="list-group-item list-group-item-action">Account</a>
+                                        <a href="<?= base_url(); ?><?= $client['position']; ?>/profil/<?= $client['id']; ?>" class="list-group-item list-group-item-action active">Profile</a>
                                     </div>
                                 </div>
 
@@ -168,7 +160,7 @@
                                             </div>
                                             <div class="row ml-2 pb-2">
                                                 <div class="col-sm-4"><b>Website</b></div>
-                                                <div class="col-sm-7"><?= $profilcompany2['website']; ?></div>
+                                                <div class="col-sm-7"><a href="https://<?= $profilcompany2['website']; ?>" target=" _blank" rel="nofollow" class="text-decoration-none"><?= $profilcompany2['website']; ?></a></div>
                                             </div>
 
                                         </form>

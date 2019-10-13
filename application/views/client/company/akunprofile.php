@@ -1,72 +1,64 @@
-<section id="akun" class="akun pb-4">
-	<div class="container">
+<section>
+    <div class="container mt-4 mb-4">
 
-		<div class="row mb-4 pt-5 pb-5">
-			<div class="col">
-				<h2></h2>
-			</div>
-		</div>
+        <div class="card">
+            <h2 class="card-header text-center">Account</h2>
+            <div class="card-body">
 
+                <div class="row justify-content-center">
 
+                    <div class="col-lg-4 text-center">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="<?= base_url('assets/img/') . $client['image']; ?>" class=" pb-3" width="120">
+                                <h3><?= $client['name']; ?></h3>
 
-		<div class="card">
-			<h2 class="card-header text-center">Account</h2>
-			<div class="card-body">
+                                <div class="card-body pb-3">
+                                    <div class="list-group">
+                                        <a href="<?= base_url() ?><?= $client['position']; ?>/uploadphotoprofil" class="list-group-item list-group-item-action">Upload Photo</a>
+                                        <a href="#" class="list-group-item list-group-item-action">Aktifkan Notifikasi</a>
+                                        <a href="<?= base_url(); ?><?= $client['position']; ?>/dataakun" class="list-group-item list-group-item-action">Account</a>
+                                        <a href="<?= base_url(); ?><?= $client['position']; ?>/profil/<?= $client['id']; ?>" class="list-group-item list-group-item-action active">Profile</a>
+                                    </div>
+                                </div>
 
-				<div class="row justify-content-center">
+                            </div>
+                        </div>
 
-					<div class="col-lg-4 text-center">
-						<div class="card">
-							<div class="card-body">
-								<img src="<?= base_url('assets/img/') . $client['image']; ?>" class=" pb-3" width="120">
-								<h3><?= $client['name']; ?></h3>
+                    </div>
 
-								<div class="card-body pb-3">
-									<div class="list-group">
-										<a href="<?= base_url(); ?>company/dataakun" class="list-group-item list-group-item-action">Upload Photo</a>
-										<a href="<?= base_url(); ?>company/dataakun" class="list-group-item list-group-item-action">Aktifkan Notifikasi</a>
-										<a href="<?= base_url(); ?>company/dataakun" class="list-group-item list-group-item-action">Account</a>
-										<a href="<?= base_url(); ?>talent/profil/<?= $client['id']; ?>" class="list-group-item list-group-item-action active">Profile</a>
-									</div>
-								</div>
+                    <div class="col-lg-7">
 
-							</div>
-						</div>
+                        <div class="card">
 
-					</div>
+                            <h5 class="card-header">Data Penanggung Jawab</h5>
+                            <div class="card-body">
+                                <nav class="nav">
+                                    <a class="nav-link" href="<?= base_url('company/profil/'); ?><?= $client['id']; ?>">Back Profile</a>
+                                </nav>
 
-					<div class="col-lg-7">
-
-						<div class="card">
-
-							<h5 class="card-header">Data Penanggung Jawab</h5>
-							<div class="card-body">
-								<nav class="nav">
-									<a class="nav-link" href="<?= base_url('company/profil/'); ?><?= $client['id']; ?>">Back Profile</a>
-								</nav>
-
-								<ul class="nav nav-tabs">
-									<li class="nav-item">
-										<a class="nav-link active">Penanggung Jawab</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="<?= base_url('company/dataakunprofile2'); ?>">Data Perusahaan</a>
-									</li>
-								</ul>
+                                <ul class="nav nav-tabs">
+                                    <li class="nav-item">
+                                        <a class="nav-link active">Penanggung Jawab</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="<?= base_url('company/dataakunprofile2'); ?>">Data Perusahaan</a>
+                                    </li>
+                                </ul>
 
 
-								<form action="<?= base_url('company/dataakunprofile'); ?>" method="post">
-									
-								<input type="hidden" id="company_id" name="company_id" value="<?= $client['id'] ?>">
-                                
+                                <form action="<?= base_url('company/dataakunprofile'); ?>" method="post">
 
-								<div class="row ml-2 pb-2 pt-4">
+                                    <input type="hidden" id="company_id" name="company_id" value="<?= $client['id'] ?>">
+
+
+                                    <div class="row ml-2 pb-2 pt-4">
                                         <div class="col-sm-4"><b>NIK</b></div>
                                         <div class="col-sm-5">
                                             <input class="form-control form-control-sm" name="nik" id="nik" type="number" placeholder="Masukkan No KTP" value="<?= set_value('nik'); ?>">
                                             <?= form_error('nik', '<small class="text-danger pl-3">', '</small>'); ?></div>
-									</div>
-									<div class="row ml-2 pb-2">
+                                    </div>
+                                    <div class="row ml-2 pb-2">
                                         <div class="col-sm-4"><b>Nama</b></div>
                                         <div class="col-sm-5">
                                             <input class="form-control form-control-sm" name="name" id="name" type="text" placeholder="Masukkan Nama" value="<?= set_value('name'); ?>">
@@ -102,7 +94,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                   
+
                                     <div class="row ml-2 pb-2">
                                         <div class="col-sm-4"><b>Alamat</b></div>
                                         <div class="col-sm-5">
@@ -145,19 +137,19 @@
                                             <button type="submit" class="btn btn-primary btn-block btn-sm">Save</button>
                                         </div>
                                     </div>
-								</form>
+                                </form>
 
-							</div>
-
-
-						</div>
-					</div>
-				</div>
-			</div>
+                            </div>
 
 
-		</div>
-	</div>
-	</div>
-	</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+    </div>
 </section>
